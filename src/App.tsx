@@ -57,7 +57,9 @@ function MainLayout() {
 
       const value = (id: string) => {
         const element = document.getElementById(id);
-        return element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement || element instanceof HTMLSelectElement
+        return element instanceof HTMLInputElement ||
+          element instanceof HTMLTextAreaElement ||
+          element instanceof HTMLSelectElement
           ? element.value.trim()
           : '';
       };
@@ -71,7 +73,11 @@ function MainLayout() {
         `Message: ${value('form-message')}`,
       ].join('\n');
 
-      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+      window.open(
+        `https://wa.me/919876543210?text=${encodeURIComponent(text)}`,
+        '_blank',
+        'noopener,noreferrer',
+      );
     };
 
     document.addEventListener('submit', handleInquirySubmit, true);
