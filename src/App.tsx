@@ -55,18 +55,17 @@ function MainLayout() {
       const form = event.target;
       if (!(form instanceof HTMLFormElement) || form.id !== 'contact-inquiry-form') return;
 
-      const data = new FormData(form);
-      const name = String(data.get('name') ?? '').trim();
-      const phone = String(data.get('phone') ?? '').trim();
-      const service = String(data.get('service') ?? '').trim();
-      const message = String(data.get('message') ?? '').trim();
+      const value = (id: string) => document.getElementById(id) instanceof HTMLInputElement || document.getElementById(id) instanceof HTMLTextAreaElement || document.getElementById(id) instanceof HTMLSelectElement
+        ? (document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement).value.trim()
+        : '';
+
       const text = [
         'Hello Kesarganj Sewing Machine!',
         '',
-        `Name: ${name}`,
-        `Phone: ${phone}`,
-        `Service: ${service}`,
-        `Message: ${message}`,
+        `Name: ${value('form-name')}`,
+        `Phone: ${value('form-phone')}`,
+        `Service: ${value('form-service')}`,
+        `Message: ${value('form-message')}`,
       ].join('\n');
 
       window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
