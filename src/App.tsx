@@ -53,11 +53,14 @@ function MainLayout() {
   useEffect(() => {
     const handleInquirySubmit = (event: SubmitEvent) => {
       const form = event.target;
-      if (!(form instanceof HTMLFormElement) || form.id !== 'contact-inquiry-form') return;
+      if (!(form instanceof HTMLFormElement) || !form.closest('#contact-page-container')) return;
 
-      const value = (id: string) => document.getElementById(id) instanceof HTMLInputElement || document.getElementById(id) instanceof HTMLTextAreaElement || document.getElementById(id) instanceof HTMLSelectElement
-        ? (document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement).value.trim()
-        : '';
+      const value = (id: string) => {
+        const element = document.getElementById(id);
+        return element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement || element instanceof HTMLSelectElement
+          ? element.value.trim()
+          : '';
+      };
 
       const text = [
         'Hello Kesarganj Sewing Machine!',
