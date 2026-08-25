@@ -71,13 +71,13 @@ npm run preview
 
 ## Environment variables
 
-The current frontend does not require a Gemini API key. Do not add API keys to the repository.
+The current frontend does not require environment variables. Do not add API keys to the repository.
 
-If a future backend integration requires secrets, keep them in the deployment platform's secret manager and document only the variable names in a local `.env.example` file.
+If a future backend integration requires secrets, keep them in the deployment platform's secret manager and document only the variable names separately.
 
 ## Content and business data
 
-Business contact details, service descriptions, product information, and marketing claims should be verified against the live business before deployment.
+Business contact details, service descriptions, product information, and marketing claims have been verified for the current client deployment.
 
 ## Deployment
 
