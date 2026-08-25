@@ -1,18 +1,20 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import en from '../locales/en.json';
 import hi from '../locales/hi.json';
 import hinglish from '../locales/hinglish.json';
 
 export type LanguageType = 'hinglish' | 'en' | 'hi';
 
+type TranslationTree = Record<string, unknown>;
+
 interface LanguageContextProps {
   language: LanguageType;
   setLanguage: (lang: LanguageType) => void;
   t: (key: string) => string;
-  tObj: (namespace: string) => any;
+  tObj: (namespace: string) => TranslationTree;
 }
 
-const translations: Record<LanguageType, any> = {
+const translations: Record<LanguageType, TranslationTree> = {
   en,
   hi,
   hinglish,
@@ -21,15 +23,14 @@ const translations: Record<LanguageType, any> = {
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Read saved language from localStorage, default to 'hinglish' as requested
   const [language, setLanguageState] = useState<LanguageType>(() => {
     try {
       const saved = localStorage.getItem('app-language');
       if (saved === 'en' || saved === 'hi' || saved === 'hinglish') {
         return saved;
       }
-    } catch (e) {
-      console.error('Failed to access localStorage for language:', e);
+    } catch (error) {
+      console.error('Failed to access localStorage for language:', error);
     }
     return 'hinglish';
   });
@@ -38,30 +39,34 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguageState(lang);
     try {
       localStorage.setItem('app-language', lang);
-    } catch (e) {
-      console.error('Failed to save language to localStorage:', e);
+    } catch (error) {
+      console.error('Failed to save language to localStorage:', error);
     }
   };
 
+  useEffect(() => {
+    document.documentElement.lang = language === 'hi' ? 'hi' : 'en';
+  }, [language]);
+
   const t = (key: string): string => {
-    const localeData = translations[language] || translations['hinglish'];
     const parts = key.split('.');
-    let current = localeData;
-    
+    let current: unknown = translations[language] ?? translations.hinglish;
+
     for (const part of parts) {
       if (current && typeof current === 'object' && part in current) {
-        current = current[part];
+        current = (current as TranslationTree)[part];
       } else {
         return key;
       }
     }
-    
+
     return typeof current === 'string' ? current : key;
   };
 
-  const tObj = (namespace: string): any => {
-    const localeData = translations[language] || translations['hinglish'];
-    return localeData[namespace] || {};
+  const tObj = (namespace: string): TranslationTree => {
+    const localeData = translations[language] ?? translations.hinglish;
+    const value = localeData[namespace];
+    return value && typeof value === 'object' ? (value as TranslationTree) : {};
   };
 
   return (
