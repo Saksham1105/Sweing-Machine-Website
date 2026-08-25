@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { LanguageProvider, useLanguage } from './lib/LanguageContext';
+import { useEffect, useState } from 'react';
+import { LanguageProvider } from './lib/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,13 +9,13 @@ import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
-function MainLayout() {
-  const [currentView, setCurrentView] = useState<'home' | 'machines' | 'repair' | 'gallery' | 'about' | 'contact'>('home');
-  const { t } = useLanguage();
+export type View = 'home' | 'machines' | 'repair' | 'gallery' | 'about' | 'contact';
 
-  // Scroll to top on view changes (simulating page navigation)
+function MainLayout() {
+  const [currentView, setCurrentView] = useState<View>('home');
+
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [currentView]);
 
   const renderActiveView = () => {
@@ -38,18 +38,14 @@ function MainLayout() {
   };
 
   return (
-    <div id="website-root-container" className="flex flex-col min-h-screen bg-bg-custom selection:bg-secondary selection:text-primary">
-      {/* Responsive sticky brand header navigation */}
+    <div
+      id="website-root-container"
+      className="flex min-h-screen flex-col bg-bg-custom selection:bg-secondary selection:text-primary"
+    >
       <Navbar currentView={currentView} onViewChange={setCurrentView} />
-
-      {/* Main page content area */}
       <main id="main-content-area" className="flex-grow">
-        <div className="py-6 sm:py-10">
-          {renderActiveView()}
-        </div>
+        <div className="py-6 sm:py-10">{renderActiveView()}</div>
       </main>
-
-      {/* Business Coordinates and Footer branding */}
       <Footer onViewChange={setCurrentView} />
     </div>
   );
