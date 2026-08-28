@@ -1,16 +1,28 @@
-import { fileURLToPath } from 'node:url';
-import path from 'node:path';
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
+import path from 'path';
 import { defineConfig } from 'vite';
-
-const rootDir = path.dirname(fileURLToPath(import.meta.url));
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@': rootDir,
+      '@': path.resolve(__dirname, '.'),
     },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-motion': ['motion'],
+          'vendor-lucide': ['lucide-react'],
+        },
+      },
+    },
+  },
+  server: {
+    hmr: process.env.DISABLE_HMR !== 'true',
+    watch: process.env.DISABLE_HMR === 'true' ? null : {},
   },
 });
