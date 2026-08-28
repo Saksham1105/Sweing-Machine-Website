@@ -1,6 +1,6 @@
-# Kesarganj Sewing Machine Website
+# Kamal Sewing Machines Website
 
-A responsive, multilingual business website for a local sewing-machine sales and repair shop in Ajmer, Rajasthan.
+A responsive, multilingual business website for Kamal Sewing Machines, a sewing-machine sales and repair business in Ajmer, Rajasthan.
 
 ## What the site includes
 
@@ -12,6 +12,8 @@ A responsive, multilingual business website for a local sewing-machine sales and
 - Responsive mobile and desktop layouts
 - WhatsApp and phone contact actions
 - SEO-ready semantic page structure
+- Optimized WebP imagery and lazy loading
+- Route-level code splitting and intent-based prefetching
 
 ## Tech stack
 
@@ -21,12 +23,13 @@ A responsive, multilingual business website for a local sewing-machine sales and
 - Tailwind CSS v4
 - Motion
 - Lucide React
+- Manrope typography
 
 ## Project structure
 
 ```text
 src/
-├── assets/          # Local static assets
+├── assets/          # Local optimized assets
 ├── components/      # Shared navigation and footer UI
 ├── lib/             # Shared application logic, including i18n
 ├── locales/         # English, Hindi, and Hinglish translations
@@ -83,7 +86,7 @@ Business contact details, service descriptions, product information, and marketi
 
 This is a standard Vite frontend and can be deployed to any static-hosting platform that supports SPA fallbacks.
 
-For production deployments, ensure the host serves `index.html` for client-side routes and that the final canonical domain is configured in the site's SEO metadata.
+For Cloudflare Pages, the repository includes the required SPA fallback configuration so client-side routes resolve correctly.
 
 ## Repository standards
 
