@@ -40,7 +40,22 @@ function MainLayout() {
 
   // Scroll to top on view changes (simulating page navigation)
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    const handlePopState = () => setCurrentView(getViewFromLocation());
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    const titles: Record<View, string> = {
+      home: 'Kamal Sewing Machines | Sales & Repair in Ajmer',
+      machines: 'Sewing Machines | Kamal Sewing Machines',
+      repair: 'Repair & Service | Kamal Sewing Machines',
+      gallery: 'Gallery | Kamal Sewing Machines',
+      about: 'About Us | Kamal Sewing Machines',
+      contact: 'Contact | Kamal Sewing Machines',
+    };
+    document.title = titles[currentView];
   }, [currentView]);
 
   const handleViewChange = (view: 'home' | 'machines' | 'repair' | 'gallery' | 'about' | 'contact') => {
@@ -110,9 +125,5 @@ function MainLayout() {
 }
 
 export default function App() {
-  return (
-    <LanguageProvider>
-      <MainLayout />
-    </LanguageProvider>
-  );
+  return <LanguageProvider><MainLayout /></LanguageProvider>;
 }

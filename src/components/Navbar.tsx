@@ -12,63 +12,16 @@ interface NavbarProps {
 export default function Navbar({ currentView, onViewChange, onPrefetch }: NavbarProps) {
   const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { id: 'home', label: t('nav.home') },
-    { id: 'machines', label: t('nav.machines') },
-    { id: 'repair', label: t('nav.repair') },
-    { id: 'gallery', label: t('nav.gallery') },
-    { id: 'about', label: t('nav.about') },
-    { id: 'contact', label: t('nav.contact') },
-  ];
-
-  const handleNavClick = (viewId: string) => {
-    onViewChange(viewId);
-    setIsOpen(false);
-  };
-
-  const phoneNumbers = "+919876543210";
-  const whatsappUrl = "https://wa.me/919876543210?text=Hello,%20I%20have%20a%20sewing%20machine%20sales/repair%20inquiry.";
+  const navItems = navIds.map((id) => ({ id, label: t(`nav.${id}`) }));
+  const handleNavClick = (viewId: string) => { onViewChange(viewId); setIsOpen(false); };
+  const phoneNumbers = '+919876543210';
+  const whatsappUrl = 'https://wa.me/919876543210?text=Hello%2C%20I%20have%20a%20sewing%20machine%20sales%2Frepair%20inquiry.';
 
   return (
-    <nav id="app-navbar" className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
-      {/* Top Utility Bar - Geometric Balance Theme styled with Secondary color background and Primary text */}
-      <div className="h-auto py-2 sm:py-0 sm:h-10 bg-secondary flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 text-xs font-semibold uppercase tracking-wider text-primary">
-        <div className="flex items-center space-x-3 sm:space-x-6">
-          <span>{t('nav.location')}</span>
-          <span className="opacity-50 hidden sm:inline">|</span>
-          <span>{t('nav.hours')}</span>
-        </div>
-        
-        {/* Geometric Balance Language Button Group (Replaces Select box for a highly polished aesthetic) */}
-        <div className="flex items-center space-x-4 mt-2 sm:mt-0">
-          <div className="flex bg-white rounded-full p-0.5 border border-primary/20 shadow-2xs">
-            <button
-              onClick={() => setLanguage('en')}
-              className={`px-3 py-0.5 sm:py-1 rounded-full text-[10px] font-bold transition-all ${
-                language === 'en' ? 'bg-primary text-white shadow-xs' : 'text-primary hover:bg-slate-50'
-              }`}
-            >
-              English
-            </button>
-            <button
-              onClick={() => setLanguage('hi')}
-              className={`px-3 py-0.5 sm:py-1 rounded-full text-[10px] font-bold transition-all ${
-                language === 'hi' ? 'bg-primary text-white shadow-xs' : 'text-primary hover:bg-slate-50'
-              }`}
-            >
-              हिंदी
-            </button>
-            <button
-              onClick={() => setLanguage('hinglish')}
-              className={`px-3 py-0.5 sm:py-1 rounded-full text-[10px] font-bold transition-all ${
-                language === 'hinglish' ? 'bg-primary text-white shadow-xs' : 'text-primary hover:bg-slate-50'
-              }`}
-            >
-              Hinglish
-            </button>
-          </div>
-        </div>
+    <nav id="app-navbar" className="sticky top-0 z-50 border-b border-slate-100 bg-white shadow-sm">
+      <div className="h-auto bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary sm:flex sm:h-10 sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-0">
+        <div className="flex items-center space-x-3 sm:space-x-6"><span>{t('nav.location')}</span><span className="hidden opacity-50 sm:inline">|</span><span>{t('nav.hours')}</span></div>
+        <div className="mt-2 flex items-center space-x-4 sm:mt-0"><div className="flex rounded-full border border-primary/20 bg-white p-0.5 shadow-2xs" aria-label="Language selection">{(['en', 'hi', 'hinglish'] as LanguageType[]).map((option) => <button key={option} type="button" onClick={() => setLanguage(option)} aria-pressed={language === option} className={`rounded-full px-3 py-0.5 text-[10px] font-bold transition-all sm:py-1 ${language === option ? 'bg-primary text-white shadow-xs' : 'text-primary hover:bg-slate-50'}`}>{option === 'en' ? 'English' : option === 'hi' ? 'हिंदी' : 'Hinglish'}</button>)}</div></div>
       </div>
 
       {/* Main Navigation */}

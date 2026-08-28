@@ -1,27 +1,9 @@
 import heroImage from '../assets/images/hero_sewing_machine_1783011718022.webp';
 import { useState, FormEvent } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
-import { 
-  Scissors, 
-  Award, 
-  Phone, 
-  MessageSquare, 
-  MapPin, 
-  Clock, 
-  ShieldCheck, 
-  Settings, 
-  Wrench, 
-  Truck, 
-  Tag, 
-  ChevronDown, 
-  ChevronUp, 
-  Star, 
-  User, 
-  Send, 
-  CheckCircle2,
-  Navigation
-} from 'lucide-react';
+import { Scissors, Award, Phone, MessageSquare, MapPin, Clock, ShieldCheck, Settings, Wrench, Truck, Tag, ChevronDown, ChevronUp, Star, User, Send, CheckCircle2, Navigation } from 'lucide-react';
 import { motion } from 'motion/react';
+import heroSewingMachine from '../assets/images/hero_sewing_machine_1783011718022.jpg';
 
 import UshaJanome from '../assets/images/usha_janome_1787917423551.webp';
 import SingerPromise from '../assets/images/singer_promise_1787917439528.webp';
@@ -39,20 +21,9 @@ interface HomeProps {
 
 export default function Home({ onViewChange }: HomeProps) {
   const { language, tObj } = useLanguage();
-  
-  // Safe fallback to 'hinglish' if the active language isn't explicitly defined in local dictionary
   const currentLang = tObj('home');
-
-  // State for FAQ Accordion
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  // States for Contact Form
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    inquiryType: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', phone: '', inquiryType: '', message: '' });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState('');
 
@@ -60,137 +31,35 @@ export default function Home({ onViewChange }: HomeProps) {
   const shopPhone = "+919876543210";
   const whatsappText = encodeURIComponent("Hello! I am viewing your Kamal Sewing Machines website. I have an inquiry about sales/repair services.");
   const whatsappUrl = `https://wa.me/919876543210?text=${whatsappText}`;
-  const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Kesarganj+Ajmer+Rajasthan+305001";
+  const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=Kesarganj+Ajmer+Rajasthan+305001';
 
-  // Handle FAQ Click Toggle
-  const toggleFaq = (index: number) => {
-    if (openFaq === index) {
-      setOpenFaq(null);
-    } else {
-      setOpenFaq(index);
-    }
-  };
+  const toggleFaq = (index: number) => setOpenFaq(openFaq === index ? null : index);
 
-  // Submit Contact Form
   const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (!formData.name.trim()) {
-      setFormError(language === 'hi' ? 'कृपया अपना नाम दर्ज करें।' : 'Please enter your name.');
-      return;
-    }
-    if (!formData.phone.trim() || formData.phone.length < 10) {
-      setFormError(language === 'hi' ? 'कृपया एक वैध 10-अंकीय फ़ोन नंबर दर्ज करें।' : 'Please enter a valid 10-digit phone number.');
-      return;
-    }
-    setFormError('');
-    setFormSubmitted(true);
-    // Reset form after a successful simulated submission
-    setFormData({
-      name: '',
-      phone: '',
-      inquiryType: '',
-      message: ''
-    });
+    if (!formData.name.trim()) { setFormError(language === 'hi' ? 'कृपया अपना नाम दर्ज करें।' : 'Please enter your name.'); return; }
+    if (!formData.phone.trim() || formData.phone.length < 10) { setFormError(language === 'hi' ? 'कृपया एक वैध 10-अंकीय फ़ोन नंबर दर्ज करें।' : 'Please enter a valid 10-digit phone number.'); return; }
+    setFormError(''); setFormSubmitted(true);
+    setFormData({ name: '', phone: '', inquiryType: '', message: '' });
   };
 
   return (
     <div id="home-page-container" className="space-y-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-10">
-      
-      {/* 1. HERO SECTION */}
       <section id="hero-section" className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl border border-slate-100 p-6 sm:p-10 lg:p-12 shadow-xs overflow-hidden">
-        {/* Decorative corner background blur */}
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-secondary/20 blur-3xl -z-10" />
         <div className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-accent/10 blur-3xl -z-10" />
-
-        {/* Hero Left: Text & CTAs */}
         <div className="lg:col-span-7 space-y-6">
-          <motion.div 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1 bg-secondary text-primary rounded-lg text-xs font-bold uppercase tracking-widest"
-          >
-            <Award className="w-4 h-4 text-accent" />
-            <span>{currentLang.hero.tagline}</span>
-          </motion.div>
-
-          <motion.h1 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary leading-tight tracking-tight"
-          >
-            {currentLang.hero.headline}
-          </motion.h1>
-
-          <motion.p 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg font-bold text-accent tracking-wide"
-          >
-            {currentLang.hero.subheading}
-          </motion.p>
-
-          <motion.p 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-slate-600 text-sm sm:text-base leading-relaxed font-light max-w-xl"
-          >
-            {currentLang.hero.description}
-          </motion.p>
-
-          {/* Hero Buttons Block */}
-          <motion.div 
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4"
-          >
-            {/* Call Now */}
-            <a
-              id="hero-call-btn"
-              href={`tel:${shopPhone}`}
-              className="flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-white rounded-xl font-bold text-sm shadow-sm hover:bg-[#1f4e5a] hover:shadow-md transition-all text-center"
-            >
-              <Phone className="w-4 h-4" />
-              <span>{currentLang.hero.callBtn}</span>
-            </a>
-
-            {/* WhatsApp */}
-            <a
-              id="hero-whatsapp-btn"
-              href={whatsappUrl}
-              target="_blank"
-              referrerPolicy="no-referrer"
-              className="flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-bold text-sm shadow-sm hover:bg-[#1ebb59] hover:shadow-md transition-all text-center"
-            >
-              <MessageSquare className="w-4 h-4 fill-current" />
-              <span>{currentLang.hero.whatsappBtn}</span>
-            </a>
-
-            {/* Directions */}
-            <a
-              id="hero-directions-btn"
-              href={directionsUrl}
-              target="_blank"
-              referrerPolicy="no-referrer"
-              className="flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold text-sm hover:border-accent hover:text-accent transition-all text-center"
-            >
-              <Navigation className="w-4 h-4 text-accent" />
-              <span>{currentLang.hero.directionsBtn}</span>
-            </a>
+          <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-3 py-1 bg-secondary text-primary rounded-lg text-xs font-bold uppercase tracking-widest"><Award className="w-4 h-4 text-accent" /><span>{currentLang.hero.tagline}</span></motion.div>
+          <motion.h1 initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary leading-tight tracking-tight">{currentLang.hero.headline}</motion.h1>
+          <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="text-lg font-bold text-accent tracking-wide">{currentLang.hero.subheading}</motion.p>
+          <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="text-slate-600 text-sm sm:text-base leading-relaxed font-light max-w-xl">{currentLang.hero.description}</motion.p>
+          <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4">
+            <a id="hero-call-btn" href={`tel:${shopPhone}`} className="flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-white rounded-xl font-bold text-sm shadow-sm hover:bg-[#1f4e5a] hover:shadow-md transition-all text-center"><Phone className="w-4 h-4" /><span>{currentLang.hero.callBtn}</span></a>
+            <a id="hero-whatsapp-btn" href={whatsappUrl} target="_blank" referrerPolicy="no-referrer" className="flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-xl font-bold text-sm shadow-sm hover:bg-[#1ebb59] hover:shadow-md transition-all text-center"><MessageSquare className="w-4 h-4 fill-current" /><span>{currentLang.hero.whatsappBtn}</span></a>
+            <a id="hero-directions-btn" href={directionsUrl} target="_blank" referrerPolicy="no-referrer" className="flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold text-sm hover:border-accent hover:text-accent transition-all text-center"><Navigation className="w-4 h-4 text-accent" /><span>{currentLang.hero.directionsBtn}</span></a>
           </motion.div>
         </div>
-
-        {/* Hero Right: Large Generated Sewing Machine Image */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="lg:col-span-5 relative"
-        >
+        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }} className="lg:col-span-5 relative">
           <div className="relative rounded-2xl overflow-hidden border border-slate-100 shadow-md aspect-[16/11]">
             <img 
               src={heroImage} 
@@ -206,19 +75,11 @@ export default function Home({ onViewChange }: HomeProps) {
             {/* Soft gradient overlay to fit text overlay if necessary, and beautiful shading */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
           </div>
-          {/* Badge attached to Image */}
-          <div className="absolute -bottom-4 -left-4 sm:bottom-4 sm:left-4 bg-white/95 backdrop-blur-xs border border-slate-200/60 shadow-md p-4 rounded-xl flex items-center gap-3">
-            <div className="w-10 h-10 bg-secondary text-primary rounded-lg flex items-center justify-center font-black">
-              25+
-            </div>
-            <div>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none">Established</p>
-              <p className="text-xs font-extrabold text-primary mt-1">Kesarganj, Ajmer (1995)</p>
-            </div>
-          </div>
+          <div className="absolute -bottom-4 -left-4 sm:bottom-4 sm:left-4 bg-white/95 backdrop-blur-xs border border-slate-200/60 shadow-md p-4 rounded-xl flex items-center gap-3"><div className="w-10 h-10 bg-secondary text-primary rounded-lg flex items-center justify-center font-black">25+</div><div><p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none">Established</p><p className="text-xs font-extrabold text-primary mt-1">Kesarganj, Ajmer (1995)</p></div></div>
         </motion.div>
       </section>
 
+      <section id="why-choose-us" className="space-y-10"><div className="text-center max-w-3xl mx-auto space-y-3"><h2 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight">{currentLang.whyChooseUs.title}</h2><p className="text-slate-500 text-xs sm:text-sm font-light leading-relaxed">{currentLang.whyChooseUs.subtitle}</p></div><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">{currentLang.whyChooseUs.items.map((item: any, idx: number) => { const icons = [Award, Wrench, Settings, Truck, Tag]; const IconComponent = icons[idx] || Award; return <motion.div key={idx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.4, delay: idx * 0.05 }} className="bg-white border border-slate-100 p-6 rounded-2xl shadow-2xs hover:shadow-xs transition-all flex flex-col justify-between hover:border-secondary"><div className="space-y-4"><div className="w-10 h-10 bg-secondary/50 text-primary rounded-lg flex items-center justify-center"><IconComponent className="w-5 h-5 text-primary" /></div><h3 className="font-extrabold text-sm text-primary">{item.title}</h3><p className="text-xs text-slate-500 leading-relaxed font-light">{item.desc}</p></div></motion.div>; })}</div></section>
 
       {/* 2. WHY CHOOSE US SECTION */}
       <section id="why-choose-us" className="space-y-10">
@@ -400,17 +261,7 @@ export default function Home({ onViewChange }: HomeProps) {
                     </p>
                   </div>
 
-                  {/* Machine Specifications */}
-                  <div className="bg-slate-50 p-3 rounded-lg text-[10px] text-slate-600 space-y-1">
-                    <div className="flex justify-between">
-                      <span className="font-bold text-slate-400 uppercase">{currentLang.featured.speed}:</span>
-                      <span className="font-semibold">{machine.speed}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-bold text-slate-400 uppercase">{currentLang.featured.warranty}:</span>
-                      <span className="font-semibold text-accent">{machine.warranty}</span>
-                    </div>
-                  </div>
+      <section id="brands-section" className="space-y-8"><div className="text-center max-w-2xl mx-auto space-y-2"><h2 className="text-xl sm:text-2xl font-extrabold text-primary tracking-tight">{currentLang.brands.title}</h2><p className="text-slate-400 text-xs font-light">{currentLang.brands.subtitle}</p></div><div className="grid grid-cols-2 sm:grid-cols-5 gap-4 max-w-4xl mx-auto">{[{ name: 'USHA', color: 'border-blue-100 text-blue-600 hover:bg-blue-50/30', sub: 'Janome Partners' }, { name: 'SINGER', color: 'border-red-100 text-red-600 hover:bg-red-50/30', sub: 'Since 1851' }, { name: 'JACK', color: 'border-indigo-100 text-indigo-600 hover:bg-indigo-50/30', sub: 'Industrial Leader' }, { name: 'BROTHER', color: 'border-slate-200 text-slate-800 hover:bg-slate-100/30', sub: 'Embroidery Tech' }, { name: 'MERRITT', color: 'border-amber-100 text-amber-700 hover:bg-amber-50/30', sub: 'Classic Durable' }].map((brand, idx) => <motion.div key={idx} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.35, delay: idx * 0.05 }} className={`border p-5 rounded-2xl text-center transition-all bg-white ${brand.color}`}><div className="font-black text-sm tracking-wider">{brand.name}</div><div className="text-[10px] font-semibold opacity-60 mt-1">{brand.sub}</div></motion.div>)}</div></section>
 
                   <div className="border-t border-slate-50 pt-3">
                     <div className="flex items-center justify-between">
@@ -720,6 +571,7 @@ export default function Home({ onViewChange }: HomeProps) {
         </div>
       </section>
 
+      <section id="contact-preview" className="rounded-3xl bg-primary text-white p-8 sm:p-10"><div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"><div className="space-y-4"><div className="flex items-center gap-2 text-secondary font-bold uppercase tracking-wider text-xs"><MapPin className="w-4 h-4" /> Kesarganj, Ajmer</div><h2 className="text-2xl sm:text-3xl font-extrabold">{currentLang.contact?.title || 'Get in Touch'}</h2><p className="text-white/80 text-sm leading-relaxed">{currentLang.contact?.subtitle || 'Contact Kamal Sewing Machines for sales, service and repairs.'}</p><div className="flex flex-wrap gap-3 pt-2"><a href={`tel:${shopPhone}`} className="rounded-xl bg-white text-primary px-5 py-3 text-sm font-bold inline-flex items-center gap-2"><Phone className="w-4 h-4" /> Call Now</a><a href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-xl bg-secondary text-primary px-5 py-3 text-sm font-bold inline-flex items-center gap-2"><MessageSquare className="w-4 h-4" /> WhatsApp</a></div></div><form onSubmit={handleFormSubmit} className="bg-white text-primary rounded-2xl p-6 space-y-4"><input value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="Your Name" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-primary" /><input value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder="Mobile Number" className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-primary" /><select value={formData.inquiryType} onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })} className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-primary"><option value="">Select Inquiry</option><option value="machine">Machine Purchase</option><option value="repair">Repair / Service</option><option value="parts">Spare Parts</option></select><textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Message" rows={4} className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-primary" />{formError && <p className="text-sm text-red-600">{formError}</p>}{formSubmitted && <p className="text-sm text-emerald-600 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Inquiry submitted.</p>}<button type="submit" className="w-full rounded-xl bg-primary text-white px-5 py-3 font-bold text-sm inline-flex items-center justify-center gap-2"><Send className="w-4 h-4" /> Submit Inquiry</button></form></div></section>
     </div>
   );
 }

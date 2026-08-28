@@ -8,17 +8,14 @@ interface FooterProps {
 
 export default function Footer({ onViewChange, onPrefetch }: FooterProps) {
   const { t } = useLanguage();
-
   const currentYear = new Date().getFullYear();
-  const phoneNumbers = "+919876543210";
-  const whatsappUrl = "https://wa.me/919876543210?text=Hello,%20I%20have%20a%20sewing%20machine%20sales/repair%20inquiry.";
+  const phoneNumbers = '+919876543210';
+  const whatsappUrl = 'https://wa.me/919876543210?text=Hello,%20I%20have%20a%20sewing%20machine%20sales/repair%20inquiry.';
 
   return (
     <footer id="app-footer" className="bg-primary text-white pt-16 pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          
-          {/* Brand/About Column */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white font-bold text-xl">
@@ -29,15 +26,9 @@ export default function Footer({ onViewChange, onPrefetch }: FooterProps) {
                 <span className="block text-[9px] uppercase tracking-widest text-slate-400">{t('footer.salesAndServices')}</span>
               </div>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed font-light">
-              {t('footer.tagline')}
-            </p>
-            <p className="text-[10px] text-slate-400 font-light">
-              {t('footer.trustedBy')}
-            </p>
+            <p className="text-xs text-slate-300 leading-relaxed font-light">{t('footer.tagline')}</p>
+            <p className="text-[10px] text-slate-400 font-light">{t('footer.trustedBy')}</p>
           </div>
-
-          {/* Quick Links Column */}
           <div className="space-y-4">
             <h3 className="font-bold text-xs uppercase tracking-widest text-secondary">
               {t('footer.quickLinks')}
@@ -65,33 +56,13 @@ export default function Footer({ onViewChange, onPrefetch }: FooterProps) {
               ))}
             </ul>
           </div>
-
-          {/* Shop Timings & Location */}
           <div className="space-y-4">
-            <h3 className="font-bold text-xs uppercase tracking-widest text-secondary">
-              Shop Timing
-            </h3>
+            <h3 className="font-bold text-xs uppercase tracking-widest text-secondary">Shop Timing</h3>
             <div className="space-y-3 text-xs font-light">
-              <div className="flex items-start gap-3">
-                <Clock className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <div>
-                  <p className="font-bold text-white">Opening Hours</p>
-                  <p className="text-slate-300 text-[11px] mt-0.5">{t('footer.hours')}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <div>
-                  <p className="font-bold text-white">Our Address</p>
-                  <p className="text-slate-300 text-[11px] mt-0.5 leading-relaxed">
-                    {t('footer.address')}
-                  </p>
-                </div>
-              </div>
+              <div className="flex items-start gap-3"><Clock className="w-4 h-4 text-accent mt-0.5 shrink-0" /><div><p className="font-bold text-white">Opening Hours</p><p className="text-slate-300 text-[11px] mt-0.5">{t('footer.hours')}</p></div></div>
+              <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-accent mt-0.5 shrink-0" /><div><p className="font-bold text-white">{t('footer.addressTitle')}</p><p className="text-slate-300 text-[11px] mt-0.5">{t('footer.address')}</p></div></div>
             </div>
           </div>
-
-          {/* Contact and Support Column */}
           <div className="space-y-4">
             <h3 className="font-bold text-xs uppercase tracking-widest text-secondary">
               {t('footer.contactUs')}
@@ -132,6 +103,7 @@ export default function Footer({ onViewChange, onPrefetch }: FooterProps) {
             {t('footer.developedBy')} • <span>Rajasthan Local Business Project</span>
           </p>
         </div>
+        <div className="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between gap-2 text-[10px] text-slate-400"><span>© {currentYear} Kamal Sewing Machines. {t('footer.rights')}</span><span>{t('footer.developedBy')}</span></div>
       </div>
     </footer>
   );
