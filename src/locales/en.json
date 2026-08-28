@@ -8,7 +8,7 @@
     "contact": "Contact",
     "location": "Kesarganj, Ajmer, Rajasthan",
     "hours": "Mon - Sat: 10:00 AM - 8:00 PM",
-    "title": "Kesarganj Sewing",
+    "title": "Kamal Sewing Machines",
     "subtitle": "Sales & Service Center"
   },
   "buttons": {
@@ -31,7 +31,7 @@
   },
   "pages": {
     "home": {
-      "title": "Welcome to Kesarganj Sewing Machine Center",
+      "title": "Welcome to Kamal Sewing Machines",
       "subtitle": "Trusted sales & repair shop for all types of sewing machines in Ajmer.",
       "placeholderText": "This is the Home Page foundation. Section styling and custom promotional banners go here."
     },
@@ -109,7 +109,7 @@
     "tTodayTitle": "Celebrating 30 Years (Today)",
     "tTodayDesc": "With the same warm kettle of tea, honest advice, and friendly pricing, we continue to keep the needles of Ajmer running smoothly.",
     "ctaTitle": "Come, Sit with Us & Share a Cup of Tea!",
-    "ctaDesc": "Whether your machine is making a strange noise, or you are thinking of upgrading your boutique setup, walk into our Kesarganj shop. We'll give you honest advice and a friendly price.",
+    "ctaDesc": "Whether your machine is making a strange noise, or you are thinking of upgrading your boutique setup, walk into our Kamal Shop. We'll give you honest advice and a friendly price.",
     "ctaBtn": "Find Our Shop on Google Maps"
   },
   "contact": {
@@ -124,7 +124,7 @@
     "phoneDetail": "+91 98765 43210",
     "phoneSub": "Available from 10 AM to 8 PM",
     "emailTitle": "Email Us",
-    "emailDetail": "kesarganjsewing@gmail.com",
+    "emailDetail": "contact@kamalsewing.com",
     "emailSub": "We reply within 24 hours",
     "formTitle": "Quick Inquiry Form",
     "formSub": "Fill this form and Shri Dinesh Sharma or our representative will call you back personally.",
@@ -168,7 +168,7 @@
       "customers": "Happy Customers",
       "installation": "Installations"
     },
-    "visitShowroomBtn": "Visit Kesarganj Showroom!",
+    "visitShowroomBtn": "Visit Kamal Showroom!",
     "visitShowroomDesc": "Want to see these machines running live? Visit our shop opposite Cinema Hall, Kesarganj, Ajmer to experience stitching demos first-hand."
   },
   "home": {
@@ -311,7 +311,7 @@
         {
           "name": "Ram Charan",
           "role": "Professional Tailor, Kesarganj",
-          "comment": "Mera Jack industrial machine ka motor festival season ke beech chalna band ho gaya tha. Kesarganj Sewing ne sirf 3 ghante mein aakar repair kiya! Inki service sach me behad tez aur bharosemand hai.",
+          "comment": "Mera Jack industrial machine ka motor festival season ke beech chalna band ho gaya tha. Kamal Sewing Machines ne sirf 3 ghante mein aakar repair kiya! Inki service sach me behad tez aur bharosemand hai.",
           "rating": 5,
           "date": "2 weeks ago"
         },
@@ -429,7 +429,7 @@
     "callBtn": "Call Now",
     "whatsappBtn": "WhatsApp Booking",
     "visitShopText": "Have a heavy machine? Visit our workshop at Kesarganj, Ajmer or schedule a doorstep Home Visit today!",
-    "guaranteeTitle": "Why Choose Kesarganj Service?",
+    "guaranteeTitle": "Why Choose Kamal Service?",
     "guaranteeText": "All repairs are done by veteran mechanics with 20+ years of experience using 100% original brand spare parts.",
     "timeLabel": "Est. Time",
     "processSteps": [

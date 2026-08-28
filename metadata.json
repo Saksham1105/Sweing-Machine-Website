@@ -1,8 +1,5 @@
 {
-  "name": "Remix: Sewing Machine Shop, Kesarganj",
+  "name": "Kamal Sewing Machines",
   "description": "Website foundation for Sewing Machine Sales \u0026 Repairs in Kesarganj, Ajmer, Rajasthan. Fully responsive with English, Hindi, and Hinglish translation systems.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
 }

@@ -32,6 +32,17 @@ interface RepairService {
 
 
 
+
+import imgRepair1 from '../assets/images/technician_repair_1787917828715.webp';
+import imgRepair2 from '../assets/images/sewing_parts_1787917897263.webp';
+import imgRepair3 from '../assets/images/needle_thread_1787917940769.webp';
+import imgRepair4 from '../assets/images/sewing_machine_closeup_1787917970256.webp';
+import imgRepair5 from '../assets/images/technician_repair_1787917828715.webp';
+import imgRepair6 from '../assets/images/sewing_workshop_1787917956853.webp';
+import imgRepair7 from '../assets/images/home_installation_1787918473831.webp';
+import imgRepair8 from '../assets/images/home_installation_1787918473831.webp';
+import imgRepair9 from '../assets/images/technician_repair_1787917828715.webp';
+
 const repairServicesData: RepairService[] = [
   {
     id: "machine-repair",
@@ -55,7 +66,7 @@ const repairServicesData: RepairService[] = [
       hi: "1 - 2 घंटे",
       hinglish: "1 - 2 Hours"
     },
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair1
   },
   {
     id: "motor-repair",
@@ -79,7 +90,7 @@ const repairServicesData: RepairService[] = [
       hi: "45 - 60 मिनट",
       hinglish: "45 - 60 Mins"
     },
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair2
   },
   {
     id: "needle-replacement",
@@ -103,7 +114,7 @@ const repairServicesData: RepairService[] = [
       hi: "15 - 20 मिनट",
       hinglish: "15 - 20 Mins"
     },
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair3
   },
   {
     id: "timing-adjustment",
@@ -127,7 +138,7 @@ const repairServicesData: RepairService[] = [
       hi: "30 - 45 मिनट",
       hinglish: "30 - 45 Mins"
     },
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair4
   },
   {
     id: "noise-fix",
@@ -151,7 +162,7 @@ const repairServicesData: RepairService[] = [
       hi: "30 - 50 मिनट",
       hinglish: "30 - 50 Mins"
     },
-    image: "https://images.unsplash.com/photo-1584267326895-d849e7d1a89e?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair5
   },
   {
     id: "complete-service",
@@ -175,7 +186,7 @@ const repairServicesData: RepairService[] = [
       hi: "2 - 3 घंटे",
       hinglish: "2 - 3 Hours"
     },
-    image: "https://images.unsplash.com/photo-1530124560612-3df96b0575b4?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair6
   },
   {
     id: "installation",
@@ -199,7 +210,7 @@ const repairServicesData: RepairService[] = [
       hi: "1 - 1.5 घंटे",
       hinglish: "1 - 1.5 Hours"
     },
-    image: "https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair7
   },
   {
     id: "home-visit",
@@ -223,7 +234,7 @@ const repairServicesData: RepairService[] = [
       hi: "सुविधानुसार समय",
       hinglish: "Flexible Schedule"
     },
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair8
   },
   {
     id: "annual-maintenance",
@@ -247,7 +258,7 @@ const repairServicesData: RepairService[] = [
       hi: "1 साल का अनुबंध",
       hinglish: "1 Year Contract"
     },
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+    image: imgRepair9
   }
 ];
 
@@ -260,7 +271,7 @@ export default function RepairServices() {
   };
 
   const handleWhatsAppBooking = (serviceTitle: string) => {
-    const text = encodeURIComponent(`Hello Kesarganj Sewing Machine! I want to book the "${serviceTitle}" repair service. Please coordinate with me for slot availability.`);
+    const text = encodeURIComponent(`Hello Kamal Sewing Machines! I want to book the "${serviceTitle}" repair service. Please coordinate with me for slot availability.`);
     window.open(`https://wa.me/919876543210?text=${text}`, '_blank', 'referrerpolicy=no-referrer');
   };
 

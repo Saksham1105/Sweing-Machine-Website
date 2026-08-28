@@ -34,6 +34,20 @@ interface MachineProduct {
 
 
 // Rich product dataset covering all requested categories, with 100% accurate localization
+
+import imgMach1 from '../assets/images/singer_promise_1787917439528.webp';
+import imgMach2 from '../assets/images/usha_janome_1787917423551.webp';
+import imgMach3 from '../assets/images/merritt_deluxe_1787917475818.webp';
+import imgMach4 from '../assets/images/domestic_machine_1787917842224.webp';
+import imgMach5 from '../assets/images/singer_promise_1787917439528.webp';
+import imgMach6 from '../assets/images/usha_janome_1787917423551.webp';
+import imgMach7 from '../assets/images/jack_f5_1787917457448.webp';
+import imgMach8 from '../assets/images/industrial_machine_1787917855508.webp';
+import imgMach9 from '../assets/images/sewing_parts_1787917897263.webp';
+import imgMach10 from '../assets/images/sewing_machine_closeup_1787917970256.webp';
+import imgMach11 from '../assets/images/embroidery_machine_1787917883730.webp';
+import imgMach12 from '../assets/images/embroidery_machine_1787917883730.webp';
+
 const productsData: MachineProduct[] = [
   // 1. MANUAL MACHINES
   {
@@ -52,7 +66,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹6,800",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+    image: imgMach1,
     features: {
       en: ["Full metal body construction", "Link-type thread take-up", "Auto-tripping spring loaded bobbin winder", "Compatible with hand/foot/motor"],
       hi: ["पूर्ण धातु (लोहे की) मजबूत बॉडी", "लिंक-टाइप थ्रेड टेक-अप", "ऑटो-ट्रिपिंग स्प्रिंग लोडेड बॉबिन वाइंडर", "हाथ/पैर/मोटर तीनों के अनुकूल"],
@@ -80,7 +94,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹7,200",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+    image: imgMach2,
     features: {
       en: ["Lever-type stitch regulator for reverse stitch", "Chromium plated parts for rust prevention", "Hassle-free oiling layout", "Durable wooden base box included"],
       hi: ["रिवर्स सिलाई के लिए लीवर-टाइप स्टिच रेगुलेटर", "जंग से बचाव के लिए क्रोमियम कोटेड पार्ट्स", "आसान ऑयलिंग डिज़ाइन", "मजबूत लकड़ी का कवर बॉक्स शामिल"],
@@ -110,7 +124,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹10,500",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=600&q=80",
+    image: imgMach3,
     features: {
       en: ["7 built-in decorative stitches", "4-step buttonholer for clean finishes", "Free arm for circular stitching like sleeves", "In-built sewing light for clear visibility"],
       hi: ["7 इन-बिल्ट सुंदर सिलाई डिज़ाइन्स", "साफ फिनिशिंग के लिए 4-स्टेप बटनहोलर", "बाजू/आस्तीन सिलने के लिए फ्री आर्म डिज़ाइन", "बेहतर रोशनी के लिए इन-बिल्ट सिलाई लाइट"],
@@ -138,7 +152,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹11,200",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=600&q=80",
+    image: imgMach4,
     features: {
       en: ["9 decorative & utility stitches", "Heavy duty metal frame inside for stability", "Snap-on presser feet for quick change", "Reverse leverage for locking stitch ends"],
       hi: ["9 सजावटी और उपयोगी सिलाई पैटर्न्स", "स्थिरता के लिए अंदर मजबूत मेटल फ्रेम ढांचा", "जल्दी बदलने योग्य स्नैप-ऑन प्रेशर फुट", "मजबूत सिलाई लॉक के लिए रिवर्स लीवर"],
@@ -168,7 +182,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹15,499",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=600&q=80",
+    image: imgMach5,
     features: {
       en: ["13 built-in stretch stitches", "Stitch width control dial up to 5mm", "Double-needle capability for twin stitching", "Comes with premium hard cover protection"],
       hi: ["13 इन-बिल्ट स्ट्रेच और सजावटी टांके", "5 मिमी तक टांका चौड़ाई एडजस्ट करने का डायल", "ट्विन सिलाई के लिए डबल सुई लगाने की क्षमता", "सुरक्षा के लिए प्रीमियम मजबूत हार्ड कवर बॉक्स"],
@@ -196,7 +210,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹11,990",
     availability: "limited",
-    image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=600&q=80",
+    image: imgMach6,
     features: {
       en: ["7 built-in stitches with 24 custom functions", "Variable needle positions for precise piping & zippers", "Heavy motor with stable metal chassis", "Free accessories kit in the extension table"],
       hi: ["24 विभिन्न सिलाई कार्यों के साथ 7 इन-बिल्ट डिज़ाइन्स", "पाइपिंग और चेन लगाने के लिए समायोज्य सुई स्थिति", "मजबूत मेटल चेसिस के साथ शक्तिशाली मोटर", "विस्तार योग्य टेबल में मुफ़्त एसेसरीज किट शामिल"],
@@ -226,7 +240,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹21,500",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1528570220941-62fa643806a6?auto=format&fit=crop&w=600&q=80",
+    image: imgMach7,
     features: {
       en: ["Smart direct-drive power saving silent motor", "Adjustable digital sewing speed selector panel", "Built-in co-axial needle position LED light", "Integrated standby mode to save electricity when idle"],
       hi: ["स्मार्ट डायरेक्ट-ड्राइव बिजली बचाने वाली शांत मोटर", "समायोज्य डिजिटल सिलाई गति (Speed) चयन पैनल", "इन-बिल्ट सुई की स्थिति को दिखाने वाली एलईडी लाइट", "चालू न होने पर बिजली बचाने के लिए ऑटो स्टैंडबाय मोड"],
@@ -254,7 +268,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹24,800",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+    image: imgMach8,
     features: {
       en: ["Automatic pressurized lubrication system", "High response stitch dial and feed mechanism", "Excellent balance of sewing head for minimum vibration", "Perfect for cotton, denim, leather and synthetic fabrics"],
       hi: ["ऑटोमैटिक दबावयुक्त सेल्फ-ऑयलिंग प्रणाली", "अत्यंत सटीक सिलाई डायल और फीड डॉग मैकेनिज्म", "न्यूनतम कंपन के लिए शानदार संतुलित सिलाई हेड", "सूती कपड़े, डेनिम (जींस), चमड़े और सिंथेटिक कपड़ों के लिए उपयुक्त"],
@@ -284,7 +298,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹23,500",
     availability: "limited",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+    image: imgMach9,
     features: {
       en: ["2-3-4 thread capability for diverse stitch types", "High-speed steel cutter knife to trim borders cleanly", "Differential feed to prevent puckering or stretching", "Easy color-coded thread pathways"],
       hi: ["विभिन्न सिलाई प्रकारों के लिए 2-3-4 धागे की क्षमता", "किनारों को साफ से काटने के लिए हाई-स्पीड स्टील कटर ब्लेड", "कपड़े को सिकुड़ने या खिंचने से बचाने के लिए डिफरेंशियल फीड", "धागा पिरोने के लिए आसान कलर-कोडेड थ्रेडिंग मार्ग"],
@@ -312,7 +326,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹18,200",
     availability: "in_stock",
-    image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=600&q=80",
+    image: imgMach10,
     features: {
       en: ["Rolled hemming and Pico stitching switch", "Adjustable cutting width selector", "Built-in scrap catcher box to keep workspace clean", "Includes a free starter pack of 4 overlock threads"],
       hi: ["रोल्ड हेमिंग और पीको सिलाई स्विच", "काटने की चौड़ाई बदलने का नियंत्रक", "कटे धागों को इकट्ठा करने के लिए इन-बिल्ट स्क्रैप बॉक्स", "4 ओवरलॉक धागों का मुफ्त शुरुआती पैक शामिल"],
@@ -342,7 +356,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹82,000",
     availability: "limited",
-    image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=600&q=80",
+    image: imgMach11,
     features: {
       en: ["135 built-in embroidery patterns & 181 sewing stitches", "Large 3.7 inch color LCD touchscreen", "In-built WiFi & USB port to import custom patterns", "Advanced automatic needle threader"],
       hi: ["135 इन-बिल्ट कढ़ाई डिज़ाइन्स और 181 सिलाई टांके", "बड़ा 3.7 इंच का रंगीन एलसीडी टचस्क्रीन", "कस्टम डिज़ाइन इम्पोर्ट करने के लिए इन-बिल्ट वाईफाई और यूएसबी पोर्ट", "उन्नत स्वचालित सुई थ्रेडर"],
@@ -370,7 +384,7 @@ const productsData: MachineProduct[] = [
     },
     price: "₹1,15,000",
     availability: "limited",
-    image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=600&q=80",
+    image: imgMach12,
     features: {
       en: ["Large embroidery area (up to 260mm x 150mm)", "250 built-in stitch patterns & 200 embroidery designs", "LCD touch screen control panel with thread warning sensor", "Heavy duty metal construction for high-speed embroidery stability"],
       hi: ["बड़ा कढ़ाई क्षेत्र (260 मिमी x 150 मिमी तक)", "250 इन-बिल्ट सिलाई टांके और 200 कढ़ाई डिज़ाइन", "धागा टूटने की सूचना देने वाला सेंसर और एलसीडी टच स्क्रीन", "तेज गति पर स्थिरता के लिए हैवी-ड्यूटी मेटल बॉडी फ्रेम"],
@@ -432,7 +446,7 @@ export default function Machines() {
   // Handle inquiry send on WhatsApp
   const handleWhatsAppInquiry = (product: MachineProduct) => {
     const localizedName = product.name[language] || product.name['en'];
-    const text = encodeURIComponent(`Hello Kesarganj Sewing Machine! I am interested in inquiring about the "${localizedName}" (${product.brand}) sewing machine. Please send current pricing and stock availability.`);
+    const text = encodeURIComponent(`Hello Kamal Sewing Machines! I am interested in inquiring about the "${localizedName}" (${product.brand}) sewing machine. Please send current pricing and stock availability.`);
     window.open(`https://wa.me/919876543210?text=${text}`, '_blank', 'referrerpolicy=no-referrer');
   };
 
@@ -450,7 +464,7 @@ export default function Machines() {
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary text-primary rounded-lg text-xs font-bold uppercase tracking-widest border border-slate-100 shadow-3xs">
           <Sparkles className="w-3.5 h-3.5 text-accent animate-pulse" />
-          <span>Kesarganj Authorized Catalog</span>
+          <span>Kamal Authorized Catalog</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight leading-none">
           {ui.title}
@@ -599,6 +613,8 @@ export default function Machines() {
                       alt={productName} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                     />
                     
                     {/* Dark gradient shadow inside photo */}
@@ -702,6 +718,8 @@ export default function Machines() {
                       alt={selectedProduct.name[language] || selectedProduct.name['en']} 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute bottom-3 left-3 px-2.5 py-1 bg-accent text-white text-[10px] font-black rounded-lg uppercase tracking-wider shadow-xs">
                       {selectedProduct.brand}

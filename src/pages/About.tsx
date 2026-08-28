@@ -88,6 +88,14 @@ interface LocalizedData {
 
 
 
+
+import imgAbout1 from '../assets/images/showroom_1787917810814.webp';
+import imgAbout2 from '../assets/images/founder_mechanic_1787918007898.webp';
+import imgAbout3 from '../assets/images/sewing_workshop_1787917956853.webp';
+import imgAbout4 from '../assets/images/sewing_parts_1787917897263.webp';
+import imgAbout5 from '../assets/images/industrial_machine_1787917855508.webp';
+import imgAbout6 from '../assets/images/needle_thread_1787917940769.webp';
+
 export default function About() {
   const { language, tObj } = useLanguage();
   const c = tObj('about');
@@ -117,11 +125,13 @@ export default function About() {
           <div className="absolute inset-0 bg-accent rounded-2xl rotate-2 group-hover:rotate-1 transition-transform duration-300"></div>
           <div className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-50">
             <img 
-              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&h=800&q=80"
-              alt="Kesarganj Showroom Setup"
+              src={imgAbout1}
+              alt="Kamal Showroom Setup"
               className="w-full h-80 object-cover transform transition-transform duration-300 group-hover:scale-105"
               referrerPolicy="no-referrer"
-            />
+                loading="lazy"
+                decoding="async"
+              />
             {/* Local Badge Overlaid */}
             <div className="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-md shadow-sm flex items-center gap-1">
               <MapPin className="w-3.5 h-3.5 text-accent" />
@@ -197,7 +207,7 @@ export default function About() {
             </div>
             <div>
               <span className="block text-xs font-bold text-primary">Dinesh Sharma & Family</span>
-              <span className="block text-[10px] text-slate-500">Kesarganj Sewing Machine Center, Ajmer</span>
+              <span className="block text-[10px] text-slate-500">Kamal Sewing Machines, Ajmer</span>
             </div>
           </div>
         </div>
@@ -208,10 +218,12 @@ export default function About() {
             <div className="absolute inset-0 bg-primary rounded-2xl -rotate-2 group-hover:rotate-0 transition-transform duration-300"></div>
             <div className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&h=800&q=80"
+                src={imgAbout2}
                 alt="Shri Dinesh Sharma - Head Mechanic & Founder"
                 className="w-full h-80 object-cover transform transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
               {/* Overlay with friendly tag */}
               <div className="absolute top-3 right-3 bg-[#25D366] text-white text-[9px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
@@ -271,10 +283,12 @@ export default function About() {
           <div className="group relative bg-white border border-slate-150 rounded-2xl overflow-hidden shadow-3xs hover:shadow-2xs transition-all duration-300">
             <div className="overflow-hidden bg-slate-50 h-48 sm:h-56">
               <img 
-                src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&h=500&q=80" 
+                src={imgAbout3} 
                 alt="Precision calibration workstation" 
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-3 border-t border-slate-50 text-center">
@@ -288,10 +302,12 @@ export default function About() {
           <div className="group relative bg-white border border-slate-150 rounded-2xl overflow-hidden shadow-3xs hover:shadow-2xs transition-all duration-300">
             <div className="overflow-hidden bg-slate-50 h-48 sm:h-56">
               <img 
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&h=500&q=80" 
+                src={imgAbout4} 
                 alt="Original metallic spare parts on shelf" 
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-3 border-t border-slate-50 text-center">
@@ -305,10 +321,12 @@ export default function About() {
           <div className="group relative bg-white border border-slate-150 rounded-2xl overflow-hidden shadow-3xs hover:shadow-2xs transition-all duration-300">
             <div className="overflow-hidden bg-slate-50 h-48 sm:h-56">
               <img 
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&h=500&q=80" 
+                src={imgAbout5} 
                 alt="Repairing manual or industrial heads" 
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-3 border-t border-slate-50 text-center">
@@ -322,10 +340,12 @@ export default function About() {
           <div className="group relative bg-white border border-slate-150 rounded-2xl overflow-hidden shadow-3xs hover:shadow-2xs transition-all duration-300">
             <div className="overflow-hidden bg-slate-50 h-48 sm:h-56">
               <img 
-                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&h=500&q=80" 
+                src={imgAbout6} 
                 alt="Testing double lock stitch strength" 
                 className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-3 border-t border-slate-50 text-center">

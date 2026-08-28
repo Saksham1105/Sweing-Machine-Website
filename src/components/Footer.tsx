@@ -3,9 +3,10 @@ import { Scissors, Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-reac
 
 interface FooterProps {
   onViewChange: (view: any) => void;
+  onPrefetch: (view: any) => void;
 }
 
-export default function Footer({ onViewChange }: FooterProps) {
+export default function Footer({ onViewChange, onPrefetch }: FooterProps) {
   const { t } = useLanguage();
 
   const currentYear = new Date().getFullYear();
@@ -24,7 +25,7 @@ export default function Footer({ onViewChange }: FooterProps) {
                 K
               </div>
               <div>
-                <span className="block font-extrabold text-base uppercase tracking-tight">Kesarganj Sewing</span>
+                <span className="block font-extrabold text-base uppercase tracking-tight">Kamal Sewing Machines</span>
                 <span className="block text-[9px] uppercase tracking-widest text-slate-400">{t('footer.salesAndServices')}</span>
               </div>
             </div>
@@ -53,6 +54,9 @@ export default function Footer({ onViewChange }: FooterProps) {
                 <li key={link.id}>
                   <button
                     onClick={() => onViewChange(link.id)}
+                    onMouseEnter={() => onPrefetch(link.id)}
+                    onFocus={() => onPrefetch(link.id)}
+                    onTouchStart={() => onPrefetch(link.id)}
                     className="text-slate-300 hover:text-white transition-all text-left font-light"
                   >
                     {link.label}
@@ -110,11 +114,11 @@ export default function Footer({ onViewChange }: FooterProps) {
                 <span>WhatsApp support</span>
               </a>
               <a
-                href="mailto:contact@kesarganjsewing.com"
+                href="mailto:contact@kamalsewing.com"
                 className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors py-1"
               >
                 <Mail className="w-4 h-4 text-accent shrink-0" />
-                <span className="truncate">contact@kesarganjsewing.com</span>
+                <span className="truncate">contact@kamalsewing.com</span>
               </a>
             </div>
           </div>
@@ -123,7 +127,7 @@ export default function Footer({ onViewChange }: FooterProps) {
 
         {/* Divider and Rights */}
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-400 uppercase tracking-widest">
-          <p>© {currentYear} Kesarganj Sewing, Ajmer. {t('footer.rights')}.</p>
+          <p>© {currentYear} Kamal Sewing Machines, Ajmer. {t('footer.rights')}.</p>
           <p className="flex items-center gap-1 font-mono">
             {t('footer.developedBy')} • <span>Rajasthan Local Business Project</span>
           </p>

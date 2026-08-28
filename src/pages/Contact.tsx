@@ -301,7 +301,7 @@ export default function Contact() {
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Kesarganj Sewing Shop Location Map"
+            title="Kamal Sewing Machines Shop Location Map"
           ></iframe>
         </div>
       </section>

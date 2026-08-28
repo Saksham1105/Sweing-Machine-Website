@@ -21,11 +21,25 @@ interface GalleryItem {
 
 
 
+
+import imgGal1 from '../assets/images/showroom_1787917810814.webp';
+import imgGal2 from '../assets/images/sewing_parts_1787917897263.webp';
+import imgGal3 from '../assets/images/needle_thread_1787917940769.webp';
+import imgGal4 from '../assets/images/sewing_machine_closeup_1787917970256.webp';
+import imgGal5 from '../assets/images/domestic_machine_1787917842224.webp';
+import imgGal6 from '../assets/images/technician_repair_1787917828715.webp';
+import imgGal7 from '../assets/images/sewing_workshop_1787917956853.webp';
+import imgGal8 from '../assets/images/tailor_working_1787917914088.webp';
+import imgGal9 from '../assets/images/pattern_cutting_1787918031149.webp';
+import imgGal10 from '../assets/images/embroidery_machine_1787917883730.webp';
+import imgGal12 from '../assets/images/technician_repair_1787917828715.webp';
+import imgGal13 from '../assets/images/industrial_machine_1787917855508.webp';
+
 const galleryData: GalleryItem[] = [
   // 1. SHOP
   {
     id: "shop-front-1",
-    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&h=900&q=80",
+    image: imgGal1,
     category: "shop",
     title: {
       en: "Authorized Showroom Display",
@@ -33,14 +47,14 @@ const galleryData: GalleryItem[] = [
       hinglish: "Authorized Showroom Display"
     },
     description: {
-      en: "A beautiful display of authorized sewing machines in our main Kesarganj showroom. Customers can test any model.",
+      en: "A beautiful display of authorized sewing machines in our main Kamal Showroom. Customers can test any model.",
       hi: "केसरगंज में हमारे मुख्य शोरूम में अधिकृत सिलाई मशीनों का सुंदर प्रदर्शन। ग्राहक किसी भी मॉडल का परीक्षण कर सकते हैं।",
       hinglish: "Kesarganj, Ajmer showroom me sewing machines ka premium display setup. Customers yahan aakar live stitch trials le sakte hain."
     }
   },
   {
     id: "shop-parts-2",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&h=500&q=80",
+    image: imgGal2,
     category: "shop",
     title: {
       en: "Premium Spare Parts Inventory",
@@ -57,7 +71,7 @@ const galleryData: GalleryItem[] = [
   // 2. MACHINES
   {
     id: "machine-stitching-closeup",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&h=1000&q=80",
+    image: imgGal3,
     category: "machines",
     title: {
       en: "Precision Stitching Close-up",
@@ -72,7 +86,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: "machine-needle-detail",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&h=500&q=80",
+    image: imgGal4,
     category: "machines",
     title: {
       en: "Heavy-Duty Needle Bar Setup",
@@ -87,7 +101,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: "machine-electric-auto",
-    image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=700&h=850&q=80",
+    image: imgGal5,
     category: "machines",
     title: {
       en: "Modern Electric Zigzag System",
@@ -104,7 +118,7 @@ const galleryData: GalleryItem[] = [
   // 3. REPAIRS
   {
     id: "repair-timing-adjustment",
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=700&h=550&q=80",
+    image: imgGal6,
     category: "repairs",
     title: {
       en: "Shuttle Hook Calibration",
@@ -119,7 +133,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: "repair-gear-assembly",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&h=900&q=80",
+    image: imgGal7,
     category: "repairs",
     title: {
       en: "Internal Gear Lubrication",
@@ -136,7 +150,7 @@ const galleryData: GalleryItem[] = [
   // 4. WORKSHOP
   {
     id: "workshop-class-setting",
-    image: "https://images.unsplash.com/photo-1528570220941-62fa643806a6?auto=format&fit=crop&w=700&h=500&q=80",
+    image: imgGal8,
     category: "workshop",
     title: {
       en: "Active Workshop & Class Support",
@@ -151,7 +165,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: "workshop-cutting-tables",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&h=850&q=80",
+    image: imgGal9,
     category: "workshop",
     title: {
       en: "Tailoring Layout & Testing Desk",
@@ -168,7 +182,7 @@ const galleryData: GalleryItem[] = [
   // 5. CUSTOMERS
   {
     id: "customer-demo-session",
-    image: "https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=700&h=500&q=80",
+    image: imgGal10,
     category: "customers",
     title: {
       en: "Live Embroidery Walkthrough",
@@ -181,26 +195,10 @@ const galleryData: GalleryItem[] = [
       hinglish: "Client ko Brother machine me USB through patterns upload aur screen adjustment navigate karna sikhate hue."
     }
   },
-  {
-    id: "customer-happy-delivery",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&h=950&q=80",
-    category: "customers",
-    title: {
-      en: "Happy Boutique Owner Delivery",
-      hi: "प्रसन्न बुटीक संचालिका डिलीवरी",
-      hinglish: "Happy Boutique Client"
-    },
-    description: {
-      en: "Handover and demo of an automatic sewing machine to a happy client who runs a specialized boutique in Ajmer.",
-      hi: "अजमेर में एक विशेष बुटीक चलाने वाली खुशहाल ग्राहक को ऑटोमैटिक सिलाई मशीन की सफल डिलीवरी और बधाई।",
-      hinglish: "Ajmer ke boutique owner ko fully calibrated high-speed machine hand-over karne par smile."
-    }
-  },
-
   // 6. INSTALLATION
   {
     id: "installation-motor-fitting",
-    image: "https://images.unsplash.com/photo-1584267326895-d849e7d1a89e?auto=format&fit=crop&w=700&h=500&q=80",
+    image: imgGal12,
     category: "installation",
     title: {
       en: "Direct-Drive Servo Motor Fitting",
@@ -215,7 +213,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: "installation-heavy-setup",
-    image: "https://images.unsplash.com/photo-1530124560612-3df96b0575b4?auto=format&fit=crop&w=700&h=900&q=80",
+    image: imgGal13,
     category: "installation",
     title: {
       en: "Industrial Table & Stand Assembly",
@@ -365,6 +363,8 @@ export default function Gallery() {
                     alt={currentTitle} 
                     className="w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
                   />
                   
                   {/* Category Tag Badge */}

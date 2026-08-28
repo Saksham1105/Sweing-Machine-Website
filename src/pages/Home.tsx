@@ -1,3 +1,4 @@
+import heroImage from '../assets/images/hero_sewing_machine_1783011718022.webp';
 import { useState, FormEvent } from 'react';
 import { useLanguage } from '../lib/LanguageContext';
 import { 
@@ -21,6 +22,13 @@ import {
   Navigation
 } from 'lucide-react';
 import { motion } from 'motion/react';
+
+import UshaJanome from '../assets/images/usha_janome_1787917423551.webp';
+import SingerPromise from '../assets/images/singer_promise_1787917439528.webp';
+import JackF5 from '../assets/images/jack_f5_1787917457448.webp';
+import MerrittDeluxe from '../assets/images/merritt_deluxe_1787917475818.webp';
+
+const featuredImages = [UshaJanome, SingerPromise, JackF5, MerrittDeluxe];
 
 interface HomeProps {
   onViewChange: (view: any) => void;
@@ -48,9 +56,9 @@ export default function Home({ onViewChange }: HomeProps) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState('');
 
-  // Fixed static business parameters for Kesarganj Sewing Shop
+  // Fixed static business parameters for Kamal Sewing Machines Shop
   const shopPhone = "+919876543210";
-  const whatsappText = encodeURIComponent("Hello! I am viewing your Kesarganj Sewing Machine website. I have an inquiry about sales/repair services.");
+  const whatsappText = encodeURIComponent("Hello! I am viewing your Kamal Sewing Machines website. I have an inquiry about sales/repair services.");
   const whatsappUrl = `https://wa.me/919876543210?text=${whatsappText}`;
   const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Kesarganj+Ajmer+Rajasthan+305001";
 
@@ -185,10 +193,15 @@ export default function Home({ onViewChange }: HomeProps) {
         >
           <div className="relative rounded-2xl overflow-hidden border border-slate-100 shadow-md aspect-[16/11]">
             <img 
-              src="/src/assets/images/hero_sewing_machine_1783011718022.jpg" 
-              alt="Kesarganj Sewing Machine Showroom Ajmer" 
+              src={heroImage} 
+              alt="Kamal Sewing Machines Showroom Ajmer" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              width="800"
+              height="550"
             />
             {/* Soft gradient overlay to fit text overlay if necessary, and beautiful shading */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
@@ -357,7 +370,7 @@ export default function Home({ onViewChange }: HomeProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {currentLang.featured.items.map((machine: any, idx: number) => {
             // Distinct prefilled inquiry link for each machine
-            const machineInquiryText = encodeURIComponent(`Hi, I am interested in buying the "${machine.name}" (${machine.category}) sewing machine shown on your Kesarganj Sewing website. Please share the current offer price and stock availability.`);
+            const machineInquiryText = encodeURIComponent(`Hi, I am interested in buying the "${machine.name}" (${machine.category}) sewing machine shown on your Kamal Sewing Machines website. Please share the current offer price and stock availability.`);
             const machineWhatsappUrl = `https://wa.me/919876543210?text=${machineInquiryText}`;
 
             return (
@@ -370,12 +383,11 @@ export default function Home({ onViewChange }: HomeProps) {
                 className="bg-white border border-slate-100 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all group"
               >
                 {/* Visual Thumbnail Frame */}
-                <div className="bg-slate-50/75 aspect-video flex flex-col items-center justify-center relative border-b border-slate-100 p-4">
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 text-primary font-bold text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-md">
+                <div className="bg-slate-50/75 aspect-video flex flex-col items-center justify-center relative border-b border-slate-100 overflow-hidden">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 text-primary font-bold text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-md z-10 shadow-sm">
                     {machine.category}
                   </div>
-                  <Scissors className="w-10 h-10 text-primary/30 group-hover:rotate-45 transition-transform duration-300" />
-                  <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-2">{machine.name.split(' ')[0]} Brand</p>
+                  <img src={featuredImages[idx]} alt={machine.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                 </div>
 
                 <div className="p-5 flex-grow flex flex-col justify-between space-y-4">
@@ -592,9 +604,9 @@ export default function Home({ onViewChange }: HomeProps) {
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
-              allowFullScreen={true} 
+              allowFullScreen={true}
               loading="lazy" 
-              title="Kesarganj Sewing Machine Center, Ajmer, Google Map"
+              title="Kamal Sewing Machines, Ajmer, Google Map"
               referrerPolicy="no-referrer"
               className="absolute inset-0"
             />

@@ -6,9 +6,10 @@ import { motion, AnimatePresence } from 'motion/react';
 interface NavbarProps {
   currentView: string;
   onViewChange: (view: any) => void;
+  onPrefetch: (view: any) => void;
 }
 
-export default function Navbar({ currentView, onViewChange }: NavbarProps) {
+export default function Navbar({ currentView, onViewChange, onPrefetch }: NavbarProps) {
   const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -100,6 +101,9 @@ export default function Navbar({ currentView, onViewChange }: NavbarProps) {
                 key={item.id}
                 id={`nav-item-${item.id}`}
                 onClick={() => handleNavClick(item.id)}
+                onMouseEnter={() => onPrefetch(item.id)}
+                onFocus={() => onPrefetch(item.id)}
+                onTouchStart={() => onPrefetch(item.id)}
                 className={`relative py-2 text-sm font-semibold transition-colors duration-200 ${
                   currentView === item.id 
                     ? 'text-primary' 
@@ -176,6 +180,9 @@ export default function Navbar({ currentView, onViewChange }: NavbarProps) {
                     key={item.id}
                     id={`nav-item-mobile-${item.id}`}
                     onClick={() => handleNavClick(item.id)}
+                    onMouseEnter={() => onPrefetch(item.id)}
+                    onFocus={() => onPrefetch(item.id)}
+                    onTouchStart={() => onPrefetch(item.id)}
                     className={`block w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors ${
                       currentView === item.id
                         ? 'bg-secondary text-primary'
