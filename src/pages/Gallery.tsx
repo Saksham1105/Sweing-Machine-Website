@@ -496,7 +496,7 @@ export default function Gallery() {
           </p>
         </div>
         <a 
-          href="https://wa.me/919876543210?text=Hello%20Kesarganj%20Sewing%20Machine!%20I%20am%20planning%20to%20visit%20your%20showroom%20soon.%20Please%20send%20live%20location%20and%20timings."
+          href="https://wa.me/919876543210?text=Hello%20Kamal%20Sewing%20Machines!%20I%20am%20planning%20to%20visit%20your%20showroom%20soon.%20Please%20send%20live%20location%20and%20timings."
           target="_blank"
           rel="noreferrer"
           className="px-5 py-3 bg-[#25D366] text-white hover:bg-[#128C7E] rounded-xl text-xs font-black shadow-xs transition-colors shrink-0 flex items-center gap-2"

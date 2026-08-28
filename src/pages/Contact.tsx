@@ -24,7 +24,7 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const phoneNumbers = "+919876543210";
-  const whatsappUrl = "https://wa.me/919876543210?text=Hello%20Kesarganj%20Sewing%20Machine!%20I%20visited%20your%20website%20and%20wanted%20to%20ask%20about...";
+  const whatsappUrl = "https://wa.me/919876543210?text=Hello%20Kamal%20Sewing%20Machines!%20I%20visited%20your%20website%20and%20wanted%20to%20ask%20about...";
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
