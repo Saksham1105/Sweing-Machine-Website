@@ -1,0 +1,458 @@
+{
+  "nav": {
+    "home": "Home",
+    "machines": "Nayi Machines",
+    "repair": "Repair Services",
+    "gallery": "Gallery",
+    "about": "Humare Baare Mein",
+    "contact": "Contact Karein",
+    "location": "Kesarganj, Ajmer, Rajasthan",
+    "hours": "Mon - Sat: 10:00 AM - 8:00 PM",
+    "title": "Kamal Sewing Machines",
+    "subtitle": "Sales & Service Center"
+  },
+  "buttons": {
+    "call": "Call Karein",
+    "whatsapp": "WhatsApp Karein",
+    "learnMore": "Aur Jaanein",
+    "explore": "Catalog Dekhein",
+    "bookService": "Repair Book Karein"
+  },
+  "footer": {
+    "rights": "Sabhi adhikaar surakshit hain",
+    "tagline": "Ajmer mein sewing machine ki sales aur repair ke liye sabse bharosemand dukaan.",
+    "address": "Cinema Hall Ke Samne, Kesarganj, Ajmer, Rajasthan - 305001",
+    "hours": "Somvaar - Shanivaar: Morning 10 baje se Shaam 8 baje tak (Ravivaar Band)",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "developedBy": "Pyaar se banaya gaya",
+    "trustedBy": "1995 se Ajmer ke tailors, boutiques aur families ka bharosa.",
+    "salesAndServices": "Sales & Services"
+  },
+  "pages": {
+    "home": {
+      "title": "Kamal Sewing Machines mein Aapka Swagat Hai",
+      "subtitle": "Ajmer mein sabhi tarah ki silai machines ki sales aur repair ki sabse trusted shop.",
+      "placeholderText": "Yeh Home Page ka foundation hai. Yahan jaldi hi naye offers aur banner lagaye jayenge."
+    },
+    "machines": {
+      "title": "Sewing Machines Catalog",
+      "subtitle": "Domestic, Industrial aur Embroidery silai machines ka behtareen collection dekhein.",
+      "placeholderText": "Yeh Machines Page ka foundation hai. Yahan Usha, Singer, Brother aur Merritt ke models dikhaye jayenge."
+    },
+    "repair": {
+      "title": "Expert Repair & Service",
+      "subtitle": "Experienced karigaron se silai machine ki service karwayein. Original spare parts ki guarantee.",
+      "placeholderText": "Yeh Repair Services Page ka foundation hai. Yahan repair request form aur rates list aayenge."
+    },
+    "gallery": {
+      "title": "Shop & Works Gallery",
+      "subtitle": "Humari dukaan, naye models aur repair kaam ki kuch tasveerein.",
+      "placeholderText": "Yeh Gallery Page ka foundation hai. Yahan shop aur machines ki photos upload hongi."
+    },
+    "about": {
+      "title": "Humari Dukaan Ke Baare Mein",
+      "subtitle": "1995 se Kesarganj aur Ajmer ke tailors aur parivaron ko bharosa aur seva pradaan kar rahe hain.",
+      "placeholderText": "Yeh About Page ka foundation hai. Yahan humari history aur owner ka message hoga."
+    },
+    "contact": {
+      "title": "Humse Sampark Karein",
+      "subtitle": "Kamal Shop par aayein ya online contact karein. Hum aapki help ke liye tayaar hain!",
+      "placeholderText": "Yeh Contact Page ka foundation hai. Yahan map, address details aur message form hoga."
+    }
+  },
+  "about": {
+    "tag": "Hamari Heritage",
+    "title": "Behind the Needles & Gears",
+    "subtitle": "Kesarganj, Ajmer ke dil me basi ek family-run shop. 30 saalon se hum tailor bhaiyon, boutique chalane wali behno aur har ghar ke stitching dreams ko support kar rahe hain.",
+    "storyTitle": "Corner Wali Wo Chhoti Si Shop",
+    "storyP1": "Humne 1995 me sirf ek simple metal toolbox, thodi garam meethi chai aur ek pakke vaade ke saath kaam shuru kiya tha: ki har customer ki machine ko apni samajh kar theek karenge. Tab Kesarganj me traditional dardi tailors ka bada hub tha. Jab bhi unki manual hand-crank machine stuck hoti, hum haazir rehte the.",
+    "storyP2": "Ajmer ke saath hum bhi aage badhe, par humne kabhi cold corporate style nahi apnaya. Hamare liye sewing machine sirf steel aur motor nahi hai; ye ek ghar ki roti, bacchon ki education aur unki self-respect ka sahara hai. Simple domestic machine ho ya modern digital automatic system, hum apna 100% effort dete hain.",
+    "storyP3": "Aaj hume proud hai ki poore Ajmer district, Kishangarh, Beawar aur Nasirabad ke tailors hum par ankh band karke trust karte hain. No fancy contracts, bas ek pyari smile, chai ki chuski aur dilon ka rishta.",
+    "ownerTitle": "Hamari Workshop ki Jaan",
+    "ownerSub": "Meet our Founder & Head Mechanic",
+    "ownerName": "Shri Dinesh Sharma",
+    "ownerQuote": "\"Sewing machine sirf do cheezein maangti hai: acche oil ki ek boond aur sachha respect. Agar aap dono denge, to ye life-time bina ek bhi tanka chhore chalegi.\"",
+    "ownerBio": "Dinesh ji ne bachpan se hi mechanical machines repair karna seekha tha. Aaj, 30+ years ke solid experience ke saath, wo machine ki sound sunkar hi bata dete hain ki gear me problem hai ya shuttle me dust hai. Har major servicing wo khud apni dekh-rekh me karte hain aur perfection check karke hi deliver karte hain.",
+    "experienceLabel": "30+ Years in Ajmer",
+    "machinesLabel": "10,000+ Serviced",
+    "tailorsLabel": "2,500+ Tailor Friends",
+    "missionTitle": "Hamara Seedha Mission",
+    "missionDesc": "Kisi bhi dardi ya boutique owner ka kaam technical issue ki wajah se na ruke. Hum bilkul honest rates me original parts lagakar lifetime support dete hain taki sab izzat se kaam kar sakein.",
+    "visionTitle": "Hamara Chhota sa Dream",
+    "visionDesc": "Ajmer ke tailors ko modern energy-saving motors aur electronic systems operate karna sikhana, taki unka kaam aasan, fast aur jyada profit dene wala ho sake.",
+    "trustTitle": "Why Our Neighbors Trust Us?",
+    "trustReason1Title": "Honest Diagnostics First",
+    "trustReason1Desc": "Agar machine me sirf ek basic cleaning aur oiling ki zarurat hai, to hum kabhi fuzool me naya part daalne ka extra charge nahi lagate. Sab clear aur honest batate hain.",
+    "trustReason2Title": "100% Genuine Spare Parts Only",
+    "trustReason2Desc": "Hum sirf trusted brands ke certified original needles, bobbin cases aur shuttle hooks hi rakhte hain jo machine ki life badhate hain. Duplicate parts hum strictly avoid karte hain.",
+    "trustReason3Title": "Wedding Deadlines Ki Izzat",
+    "trustReason3Desc": "Wedding aur festival season me tailors ka time kitna costly hota hai hum samajhte hain. Urgent case me hum extra time dekar machine same day deliver karte hain.",
+    "trustReason4Title": "Friendly Lifetime Support",
+    "trustReason4Desc": "Relationship bill payment pe khatam nahi hota. Minor issue ho to shop par aao, chai piyo aur bina kisi tension ke machine ki tuning karwao.",
+    "workshopPhotosTitle": "Inside Our Happy Workshop",
+    "workshopPhotosSub": "Hamari workshop ki sachhi tasveerein — jahan wrenches, grease, machines aur solid mechanical knowledge ka mel hota hai.",
+    "photo1Caption": "Precision Calibration Table",
+    "photo2Caption": "Original Gears & Attachments",
+    "photo3Caption": "Industrial Servicing Work",
+    "photo4Caption": "Live Stitch Quality Test",
+    "timelineTitle": "Hamara Pyara Journey",
+    "timelineSub": "Ek chhote toolbag se lekar Ajmer ki sabse trusted sewing machine shop banne tak ki short timeline.",
+    "t1995Title": "The Humble Start (1995)",
+    "t1995Desc": "Dinesh ji ne bicycle aur ek steel tool-box ke saath kaam shuru kiya, tailors ki dukaano pe ja kar immediate service dete the.",
+    "t2002Title": "Establishing Shop in Kesarganj (2002)",
+    "t2002Desc": "Ajmer ke heart Kesarganj me physical showroom khula, jisse local log original brands direct and trusted rate pe lene lage.",
+    "t2012Title": "Servo Motors & Power Upgrades (2012)",
+    "t2012Desc": "Boutique industry ke badhte trends ke sath digital power-saving servo motors aur automatic tables ki setting shuru ki.",
+    "t2020Title": "Digital Embroidery Training (2020)",
+    "t2020Desc": "Computerized embroidery machines setup karke local boutique workers ko training dena aur design loads sikhana shuru kiya.",
+    "tTodayTitle": "Celebrating 30 Years (Today)",
+    "tTodayDesc": "Aaj bhi wahi same tea, same honest and friendly advice aur same best local rates ke sath hum tailors ko serve kar rahe hain.",
+    "ctaTitle": "Chai Pe Charcha Karen!",
+    "ctaDesc": "Machine sound kar rahi hai ya tension adjust nahi ho raha? Walk-in to our shop in Kesarganj for direct friendly suggestions and best rates.",
+    "ctaBtn": "Find Our Shop on Google Maps"
+  },
+  "contact": {
+    "title": "Contact Us - Milte Hain!",
+    "subtitle": "Machine sound kar rahi hai ya new machine leni hai? Direct Kesarganj, Ajmer shop par aao ya niche diya form fill karo. Garam meethi chai ke sath solution nikalenge!",
+    "cardTitle": "Dukaan Details",
+    "addressTitle": "Shop Address",
+    "addressDetail": "Opposite Cinema Hall, Kesarganj, Ajmer, Rajasthan - 305001",
+    "hoursTitle": "Opening Hours",
+    "hoursDetail": "Monday to Saturday: 10:00 AM - 8:00 PM (Sunday Closed)",
+    "phoneTitle": "Direct Call Karein",
+    "phoneDetail": "+91 98765 43210",
+    "phoneSub": "Shop hours me kabhi bhi call karein",
+    "emailTitle": "Email Us",
+    "emailDetail": "contact@kamalsewing.com",
+    "emailSub": "24 hours me reply milega",
+    "formTitle": "Quick Inquiry Form",
+    "formSub": "Ye form bhariye aur Shri Dinesh Sharma ya humari team se koi aapko 1 hour me call karega.",
+    "labelName": "Your Name (आपका नाम)",
+    "labelPhone": "Mobile Number (मोबाइल नंबर)",
+    "labelService": "What do you need help with?",
+    "labelMessage": "Machine model aur problem details likhein",
+    "serviceBuy": "New Sewing Machine Lena Hai",
+    "serviceRepair": "Machine Repairing / Service",
+    "serviceParts": "Original Spare Parts / Motors",
+    "serviceOther": "Koi Aur Inquiry",
+    "submitBtn": "SUBMIT INQUIRY",
+    "successTitle": "Inquiry Submit Ho Gayi!",
+    "successDesc": "Dhanyavaad! Humne aapki details note kar li hain. Dinesh ji ya humari team aapko jaldi call karegi.",
+    "getDirections": "Google Maps Pe Directions Dekhein",
+    "mapsTitle": "Shop Location Map",
+    "floatingWaTooltip": "WhatsApp Chat Karein",
+    "floatingCallTooltip": "Direct Call Karein",
+    "quickCallText": "Click to Call",
+    "quickWaText": "WhatsApp Chat",
+    "mapsAddressDesc": "Opposite Cinema Hall, Kesarganj, Ajmer. Driving directions ke liye maps me open karein.",
+    "openMapsApp": "Google Maps app me open karein",
+    "phoneValidation": "Kripya 10 digit ka mobile number daalein",
+    "namePlaceholder": "e.g. Ramesh Kumar",
+    "phonePlaceholder": "e.g. 9876543210",
+    "messagePlaceholder": "Apni machine ka brand, model ya timing issues yahan likhein..."
+  },
+  "gallery": {
+    "title": "Our Visual Gallery",
+    "subtitle": "Hamare Kesarganj, Ajmer showroom, real machine installations, workshop, aur active repairs ki real photos dekhein.",
+    "filterLabel": "Categories",
+    "allPhotos": "All Photos",
+    "noPhotos": "Selected category me koi photo nahi mili.",
+    "mapLocation": "Kesarganj, Ajmer Shop",
+    "lightboxInfo": "Image {current} of {total}",
+    "categories": {
+      "shop": "Our Showroom",
+      "machines": "Sewing Machines",
+      "repairs": "Expert Repairs",
+      "workshop": "Our Workshop",
+      "customers": "Happy Customers",
+      "installation": "Installations"
+    },
+    "visitShowroomBtn": "Kamal Showroom Visit Karein!",
+    "visitShowroomDesc": "Kya aap in machines ko live chalte dekhna chahte hain? Live stitching demo ke liye Cinema Hall, Kesarganj, Ajmer ke saamne humari shop par aayen."
+  },
+  "home": {
+    "hero": {
+      "tagline": "1995 se Ajmer ka Trusted Shop",
+      "headline": "Ajmer ki Trusted Sewing Machine Shop",
+      "subheading": "Sales • Repair • Home Installation",
+      "description": "Get the best quality sewing machines aur expert repair services direct aapke ghar par. Kesarganj aur Ajmer ke tailors, boutiques aur families ke liye trusted shop since 1995.",
+      "callBtn": "Call Karein",
+      "whatsappBtn": "WhatsApp Karein",
+      "directionsBtn": "Directions Dekhein"
+    },
+    "whyChooseUs": {
+      "title": "Humien Kyun Chunein?",
+      "subtitle": "Ajmer mein 25+ saalon ka trusted experience, hum ensure karte hain ki aapki machine hamesha makkhan jaisi chale.",
+      "items": [
+        {
+          "title": "25+ Years Experience",
+          "desc": "Local tailors, boutiques aur households ko 1995 se behtareen service aur bharosa pradaan kar rahe hain."
+        },
+        {
+          "title": "Fast Repairing Service",
+          "desc": "Hum samajhte hain ki aapka kam rukna nahi chahiye. Hum bohot fast repair karte hain, aksar same day par."
+        },
+        {
+          "title": "Original Spare Parts",
+          "desc": "Hum repairs mein sirf original motors, needle, shuttle, pressure feet aur gears use karte hain brand warranty ke sath."
+        },
+        {
+          "title": "Home Service Available",
+          "desc": "Heavy machine uthane ki koi tension nahi. Hum ghar par hi repairing, pickup aur delivery ki service dete hain."
+        },
+        {
+          "title": "Affordable & Best Prices",
+          "desc": "Nayi sewing machines aur repairs par sabse genuine rates, bina kisi hidden charges ya extra fees ke."
+        }
+      ]
+    },
+    "services": {
+      "title": "Humari Specialized Services",
+      "subtitle": "Naya model select karne se lekar aapke tailoring units ko smooth chalane tak, hum sabhi service dete hain.",
+      "items": [
+        {
+          "title": "Sewing Machine Sales",
+          "desc": "Domestic, high-speed industrial, aur embroidery machines ka bada collection original brand warranty ke sath."
+        },
+        {
+          "title": "Expert Repairing",
+          "desc": "Dhaga tutna, taanka chorna, motor heating aur timing out jaisi sabhi problems ka expert repair solution."
+        },
+        {
+          "title": "Home Installation & Demo",
+          "desc": "Aapke ghar par machine ka perfect setup, alignment aur free mein detail tutorial demonstration class."
+        },
+        {
+          "title": "Annual Maintenance (AMC)",
+          "desc": "Time-to-time service, deep internal cleaning aur systematic oiling jisse machine ki life dugni ho jaye."
+        },
+        {
+          "title": "Industrial Machines",
+          "desc": "Jack, Juki aur Brother jaise high-speed computer automatic power machines ki sales aur customized repairing."
+        },
+        {
+          "title": "Domestic Machines",
+          "desc": "Ghar par sewing, zigzag, design border aur simple embroidery ke liye small & light weight handy machines."
+        }
+      ]
+    },
+    "brands": {
+      "title": "Top Brands We Deal In",
+      "subtitle": "Hum India ke sabhi leading sewing machine brands ke authorized seller hain, original parts aur warranty ke sath."
+    },
+    "featured": {
+      "title": "Featured Sewing Machines",
+      "subtitle": "Humare stock ke sabse popular aur fast selling models. Best offers aur prices ke liye direct call karein ya showroom aayein.",
+      "enquire": "WhatsApp Par Poochein",
+      "details": "Detail Dekhein",
+      "speed": "Speed",
+      "warranty": "Warranty",
+      "functions": "Functions",
+      "items": [
+        {
+          "name": "Usha Janome Allure DLX",
+          "category": "Computerized Domestic",
+          "price": "₹15,499",
+          "speed": "860 SPM",
+          "warranty": "2 Years Brand Warranty",
+          "desc": "Automatic stitching aur 13 in-built design patterns, modern boutique designers aur embroidery ke liye best option.",
+          "features": [
+            "One-step buttonhole",
+            "Stitch width adjustment",
+            "LED guide light"
+          ]
+        },
+        {
+          "name": "Singer Promise 1409",
+          "category": "Compact Zigzag Domestic",
+          "price": "₹10,800",
+          "speed": "750 SPM",
+          "warranty": "2 Years Brand Warranty",
+          "desc": "Simple aur use karne me bohot easy automatic sewing machine, beginner designers aur home usage ke liye best.",
+          "features": [
+            "9 different stitch patterns",
+            "Heavy duty metal frame",
+            "Easy pattern dial"
+          ]
+        },
+        {
+          "name": "Jack F5 Direct Drive",
+          "category": "High-Speed Industrial",
+          "price": "₹21,500",
+          "speed": "5000 SPM",
+          "warranty": "1 Year Motor Warranty",
+          "desc": "Fast speed energy-saving motor machine, tailors aur heavy garment manufacturing units ki primary choice.",
+          "features": [
+            "Direct-drive silent motor",
+            "Adjustable stitch regulator",
+            "Safety current cutoff"
+          ]
+        },
+        {
+          "name": "Merritt Domestic Deluxe",
+          "category": "Traditional Straight Stitch",
+          "price": "₹7,200",
+          "speed": "Hand/Foot Operated",
+          "warranty": "1 Year Shop Warranty",
+          "desc": "Classic lohe wali straight-stitch machine jo peedhiyon tak bina kisi problem ke chalti hai. Low cost, high work.",
+          "features": [
+            "Heavy iron body",
+            "Treadle stand compatible",
+            "No electricity required"
+          ]
+        }
+      ]
+    },
+    "reviews": {
+      "title": "Humare Customers Kya Kehte Hain",
+      "subtitle": "Humare kaam ki sachhi success Ajmer ke un tailors, boutique owners aur parivaron se aati hai jo hum par vishwas karte hain.",
+      "items": [
+        {
+          "name": "Ram Charan",
+          "role": "Professional Tailor, Kesarganj",
+          "comment": "Mera Jack industrial machine ka motor festival season ke beech chalna band ho gaya tha. Kamal Sewing Machines ne sirf 3 ghante mein aakar repair kiya! Inki service sach me behad tez aur bharosemand hai.",
+          "rating": 5,
+          "date": "2 weeks ago"
+        },
+        {
+          "name": "Pooja Sharma",
+          "role": "Boutique Owner, Ajmer City",
+          "comment": "I purchased 2 Usha Janome computerized machines from here. The team delivered them home, did the full installation, and explained all features patiently. Very polite and helpful behavior!",
+          "rating": 5,
+          "date": "1 month ago"
+        },
+        {
+          "name": "Amit Verma",
+          "role": "Local Resident, Ajmer",
+          "comment": "Purani machine repair karwani thi jo lagbhag band padi thi. Inhone original parts dale aur servicing ki, ab machine bilkul nayi jaisi smoothly chal rahi hai. Price bhi bohot reasonable tha.",
+          "rating": 5,
+          "date": "3 days ago"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions (FAQ)",
+      "subtitle": "New machines kharidne, repair rates aur home services se jude common sawaal-jawaab.",
+      "items": [
+        {
+          "q": "Kya aap Ajmer mein sewing machine home repair service dete hain?",
+          "a": "Haan! Hum pure Kesarganj aur Ajmer city ke sabhi major areas me doorstep home repair service dete hain. Jarurat padne par pick-and-drop ki suvidha bhi hai."
+        },
+        {
+          "q": "Aap kis brands ki sifting machines bechte hain?",
+          "a": "Hum USHA, SINGER, JACK, BROTHER aur MERRITT ke authorized partners hain. Aapko full brand warranty ke sath original brand new machines milti hain."
+        },
+        {
+          "q": "Kya repairing ke time original spare parts hi use hote hain?",
+          "a": "Ji haan! Hum sirf 100% genuine aur original authorized spare parts (sewing motors, needle bar, gears, shuttle) hi use karte hain taaki machine smooth chale."
+        },
+        {
+          "q": "Kya repairing ke baad koi service warranty milti hai?",
+          "a": "Bilkul! Hum repairs par 30-day ki workshop service warranty dete hain. Agar wahi issue same parts me aata hai, toh bina kisi charge ke service di jati hai."
+        },
+        {
+          "q": "Kya aap computerized embroidery machine ka demo class bhi dete hain?",
+          "a": "Haan! Jab bhi aap computerized zigzag ya embroidery machine kharidte hain, toh hum ghar par installation ke sath-sath live operate karne ka demo free of cost dete hain."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Karein & Store Visit Karein",
+      "subtitle": "Showroom visit karein, call karein ya direct WhatsApp inquiry bhejein. Hum aapki help ke liye tayaar hain!",
+      "addressHeader": "Showroom Address",
+      "address": "Cinema Hall Ke Samne, Kesarganj, Ajmer, Rajasthan - 305001",
+      "hoursHeader": "Business Hours",
+      "hours": "Monday - Saturday: 10:00 AM - 8:00 PM (Sunday Closed)",
+      "phoneHeader": "Phone Support",
+      "whatsappHeader": "WhatsApp Support",
+      "formHeader": "Inquiry Form",
+      "formName": "Aapka Naam",
+      "formPhone": "Aapka Phone Number",
+      "formSelect": "Inquiry ka Type Select Karein",
+      "formSelectOpt1": "Nayi Sewing Machine leni hai",
+      "formSelectOpt2": "Machine Repairing / Service karani hai",
+      "formSelectOpt3": "Original Spare Parts chahiye",
+      "formSelectOpt4": "Other details",
+      "formMessage": "Machine ka naam ya apni problem likhein",
+      "formBtn": "Send Message",
+      "formSuccess": "Thank you! Aapka message successfully send ho gaya hai. Humari team aapse 2 hours me direct Call ya WhatsApp par contact karegi."
+    },
+    "namePlaceholder": "e.g. Ram Charan",
+    "phonePlaceholder": "e.g. 9876543210",
+    "messagePlaceholder": "e.g. Mujhe meri Singer Tailor model ki repair karani hai."
+  },
+  "machines": {
+    "title": "Sewing Machines Catalog",
+    "subtitle": "Boutique, tailor shop ya home stitching ke liye sabse perfect machine select karein. Full brand warranty aur original parts ke sath.",
+    "searchPlaceholder": "Machine ka name, brand ya feature search karein...",
+    "filterCategory": "Categories",
+    "filterBrand": "Brands",
+    "allCategories": "All Categories",
+    "allBrands": "All Brands",
+    "priceText": "Price",
+    "priceOnRequest": "Price on Request",
+    "availability": {
+      "in_stock": "In Stock",
+      "limited": "Limited Stock",
+      "out_of_stock": "Out of Stock"
+    },
+    "btnWhatsapp": "WhatsApp Inquiry",
+    "btnDetails": "View Details",
+    "noProducts": "Aapke search ke mutabik koi machine nahi mili. Please filter ya search term change karein.",
+    "clearFilters": "Clear Filters",
+    "modal": {
+      "keyFeatures": "Key Features",
+      "techSpecs": "Technical Specs",
+      "specField": "Specification",
+      "specValue": "Detail",
+      "closeBtn": "Close Details",
+      "warrantyBadge": "Original Brand Warranty Included",
+      "visitShop": "Live demo chahiye? Kesarganj, Ajmer showroom par aakar dekhein!"
+    },
+    "categories": {
+      "manual": "Manual Machines",
+      "electric": "Electric Machines",
+      "computerized": "Computerized Machines",
+      "industrial": "Industrial Machines",
+      "overlock": "Overlock Machines",
+      "embroidery": "Embroidery Machines"
+    }
+  },
+  "repairservices": {
+    "title": "Expert Repair Services",
+    "subtitle": "Professional sewing machine repairs, original spare parts installation, aur fast home service Ajmer me.",
+    "servicesHeading": "Our Specializations",
+    "servicesSub": "Apne boutique, home stitching ya industrial unit ke liye best service select karein.",
+    "processHeading": "Our Simple Repair Process",
+    "processSub": "Dekhein kaise hum aapki machine ko bilkul new jaisa smooth banate hain.",
+    "callBtn": "Call Now",
+    "whatsappBtn": "WhatsApp Booking",
+    "visitShopText": "Machine heavy hai? Hamare Kesarganj, Ajmer showroom par laayein ya aaj hi Home Visit schedule karein!",
+    "guaranteeTitle": "Kamal Repair Kyun Select Karein?",
+    "guaranteeText": "Sari repairs 20+ years experienced mechanics karte hain original spare parts and warranty ke sath.",
+    "timeLabel": "Est. Time",
+    "processSteps": [
+      {
+        "title": "Customer Calls",
+        "desc": "Aap hume call ya WhatsApp par machine ki problem batate hain."
+      },
+      {
+        "title": "Inspection",
+        "desc": "Mechanic machine check karke accurate estimate share karta hai."
+      },
+      {
+        "title": "Repair",
+        "desc": "Original company spare parts ke sath premium repair work."
+      },
+      {
+        "title": "Testing",
+        "desc": "Cotton aur heavy denim fabrics par testing stitch checks."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Showroom se safely hand-over ya quick home delivery."
+      }
+    ]
+  }
+}

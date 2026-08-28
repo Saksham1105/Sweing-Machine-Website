@@ -1,0 +1,458 @@
+{
+  "nav": {
+    "home": "Home",
+    "machines": "Machines",
+    "repair": "Repair Services",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "contact": "Contact",
+    "location": "Kesarganj, Ajmer, Rajasthan",
+    "hours": "Mon - Sat: 10:00 AM - 8:00 PM",
+    "title": "Kamal Sewing Machines",
+    "subtitle": "Sales & Service Center"
+  },
+  "buttons": {
+    "call": "Call Now",
+    "whatsapp": "WhatsApp Us",
+    "learnMore": "Learn More",
+    "explore": "Explore Catalog",
+    "bookService": "Book a Repair"
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "tagline": "Your trusted partner for sewing machine sales & repairs in Ajmer.",
+    "address": "Opposite Cinema Hall, Kesarganj, Ajmer, Rajasthan - 305001",
+    "hours": "Mon - Sat: 10:00 AM - 8:00 PM (Sunday Closed)",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "developedBy": "Crafted with care",
+    "trustedBy": "Trusted by Ajmer's tailors, boutiques, and families since 1995.",
+    "salesAndServices": "Sales & Services"
+  },
+  "pages": {
+    "home": {
+      "title": "Welcome to Kamal Sewing Machines",
+      "subtitle": "Trusted sales & repair shop for all types of sewing machines in Ajmer.",
+      "placeholderText": "This is the Home Page foundation. Section styling and custom promotional banners go here."
+    },
+    "machines": {
+      "title": "Sewing Machines Catalog",
+      "subtitle": "Explore our collection of top-quality domestic, industrial, and embroidery sewing machines.",
+      "placeholderText": "This is the Machines Page foundation. Brand grids (Usha, Singer, Brother, Merritt) and models list will be here."
+    },
+    "repair": {
+      "title": "Expert Repair & Maintenance Services",
+      "subtitle": "Get your sewing machine serviced by experienced professionals. Original spare parts guaranteed.",
+      "placeholderText": "This is the Repair Services Page foundation. Service booking forms and repair price list will be here."
+    },
+    "gallery": {
+      "title": "Shop & Works Gallery",
+      "subtitle": "A glimpse of our latest collections, customer interactions, and repair works.",
+      "placeholderText": "This is the Gallery Page foundation. Image grids and workshop photos will be here."
+    },
+    "about": {
+      "title": "About Our Shop",
+      "subtitle": "Serving the tailors and families of Ajmer & Kesarganj with trust and pride since 1995.",
+      "placeholderText": "This is the About Page foundation. Shop history, owner's note, and values will be here."
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Visit our shop in Kesarganj or reach out online. We are happy to help you!",
+      "placeholderText": "This is the Contact Page foundation. Interactive map, inquiry form, and WhatsApp shortcuts will be here."
+    }
+  },
+  "about": {
+    "tag": "Our Warm Heritage",
+    "title": "Behind the Needles & Gears",
+    "subtitle": "A family-run shop in the heart of Kesarganj, Ajmer. For 30 years, we've helped tailors, boutiques, and home sewing enthusiasts find their perfect stitch.",
+    "storyTitle": "The Shop on the Corner",
+    "storyP1": "It all started in 1995 with nothing but a single metal toolbox, a flask of warm sweet tea, and a simple promise: to treat every customer's machine like our very own. Back then, Kesarganj was a bustling hub of traditional master dardi tailors. When their manual hand-crank machines jammed, we were there to solve it.",
+    "storyP2": "As Ajmer grew, we did too. But we made a conscious choice: never to become a cold, distant corporate showroom. For us, a sewing machine is not just a piece of iron and steel; it is the source of food, children's school fees, and self-respect for a family. Whether it's a simple domestic model for stitching kitchen curtains or a heavy computerized system for bridal lehengas, we give it our full heart.",
+    "storyP3": "Today, we are honored to be the first destination for tailors traveling from Beawar, Kishangarh, Nasirabad, and villages across Rajasthan. No fancy, complicated contracts — just honest handshakes, warm tea, and relationships that span generations.",
+    "ownerTitle": "The Heart of the Workshop",
+    "ownerSub": "Meet our Founder & Head Mechanic",
+    "ownerName": "Shri Dinesh Sharma",
+    "ownerQuote": "\"A sewing machine only asks for two simple things: a drop of good oil and honest respect. If you give it both, it will run for a lifetime without skipping a single stitch.\"",
+    "ownerBio": "Dinesh ji started repairing mechanical machines in his early teenage years, sitting beside old masters. Today, with over 30 years of grease on his hands, he is known across Ajmer for his diagnostic ear. Just by listening to the sound of a sewing machine, he can instantly tell you if the timing gear is worn or if the shuttle simply needs minor alignment. He personally oversees every single major repair job.",
+    "experienceLabel": "30 Years in Ajmer",
+    "machinesLabel": "10,000+ Fixed",
+    "tailorsLabel": "2,500+ Tailor Friends",
+    "missionTitle": "Our Honest Mission",
+    "missionDesc": "To ensure no tailor’s work is interrupted by a technical breakdown. We aim to provide affordable, lifetime machine servicing with 100% genuine spare parts so our local community can work with pride and safety.",
+    "visionTitle": "Our Simple Vision",
+    "visionDesc": "To keep the rich tailoring heritage of Ajmer thriving by introducing cost-effective modern electric motors, energy-saving upgrades, and training local youngsters in machine maintenance.",
+    "trustTitle": "Why Our Customers Trust Us",
+    "trustReason1Title": "Honest Diagnostics First",
+    "trustReason1Desc": "If a machine only needs a basic oil clean or thread tension adjustment, we will never tell you to replace the shuttle hook. We explain the exact issue in plain, simple Hindi or English.",
+    "trustReason2Title": "Original Spare Parts Only",
+    "trustReason2Desc": "We only stock verified, genuine needles, bobbin cases, and motor belts from trusted brands like Usha, Singer, and Juki. No cheap copycats that destroy machine health.",
+    "trustReason3Title": "Respecting Wedding Deadlines",
+    "trustReason3Desc": "We know that tailors have tight festival and wedding deadlines. If your machine breaks during peak season, we work overtime to get you running the very same day.",
+    "trustReason4Title": "Friendly Lifetime Support",
+    "trustReason4Desc": "Our relation doesn't end with a bill receipt. You can always stop by for a cup of tea and a quick minor tuning whenever you feel the needle stitch is uneven.",
+    "workshopPhotosTitle": "Glimpses of Our Workshop",
+    "workshopPhotosSub": "A real, cozy look behind the scenes — where screwdrivers, engine oil, and mechanical passion bring old machines back to life.",
+    "photo1Caption": "Precision Calibration Desk",
+    "photo2Caption": "Original Gears & Spares",
+    "photo3Caption": "Industrial Head Servicing",
+    "photo4Caption": "Stitch Testing Bench",
+    "timelineTitle": "Our Heartwarming Journey",
+    "timelineSub": "A small walk down memory lane, tracking our path from a single toolbox to Ajmer's beloved sewing landmark.",
+    "t1995Title": "The Humble Start (1995)",
+    "t1995Desc": "Dinesh ji starts with a single steel toolbox and a bicycle, visiting local tailors' shops to fix mechanical stitch tension issues on-site.",
+    "t2002Title": "Establishing the Corner Shop (2002)",
+    "t2002Desc": "We opened our physical showroom in Kesarganj, Ajmer. We became authorized dealers, making quality sewing machines accessible locally.",
+    "t2012Title": "Powering Up Ajmer (2012)",
+    "t2012Desc": "Began offering direct-drive energy-saving servo motors and industrial lockstitch machines as local tailoring shops grew into full boutiques.",
+    "t2020Title": "Embroidery & Training (2020)",
+    "t2020Desc": "Introduced smart computerized embroidery systems and started free on-site training to help women and local youth learn digital patterns.",
+    "tTodayTitle": "Celebrating 30 Years (Today)",
+    "tTodayDesc": "With the same warm kettle of tea, honest advice, and friendly pricing, we continue to keep the needles of Ajmer running smoothly.",
+    "ctaTitle": "Come, Sit with Us & Share a Cup of Tea!",
+    "ctaDesc": "Whether your machine is making a strange noise, or you are thinking of upgrading your boutique setup, walk into our Kamal Shop. We'll give you honest advice and a friendly price.",
+    "ctaBtn": "Find Our Shop on Google Maps"
+  },
+  "contact": {
+    "title": "Get in Touch with Us",
+    "subtitle": "Have a question about a machine, or need urgent repairs? Visit our shop in Kesarganj, Ajmer or reach out using the form below. We are always ready to help you with a warm cup of tea!",
+    "cardTitle": "Dukaan Details",
+    "addressTitle": "Shop Address",
+    "addressDetail": "Opposite Cinema Hall, Kesarganj, Ajmer, Rajasthan - 305001",
+    "hoursTitle": "Business Hours",
+    "hoursDetail": "Monday to Saturday: 10:00 AM - 8:00 PM (Sunday Closed)",
+    "phoneTitle": "Call Us Direct",
+    "phoneDetail": "+91 98765 43210",
+    "phoneSub": "Available from 10 AM to 8 PM",
+    "emailTitle": "Email Us",
+    "emailDetail": "contact@kamalsewing.com",
+    "emailSub": "We reply within 24 hours",
+    "formTitle": "Quick Inquiry Form",
+    "formSub": "Fill this form and Shri Dinesh Sharma or our representative will call you back personally.",
+    "labelName": "Your Name (आपका नाम)",
+    "labelPhone": "Mobile Number (मोबाइल नंबर)",
+    "labelService": "What do you need help with? (क्या सहायता चाहिए?)",
+    "labelMessage": "Details of your machine or issue (विवरण)",
+    "serviceBuy": "Buying a New Sewing Machine (नई मशीन खरीद)",
+    "serviceRepair": "Repair / Timing Service (मरम्मत / टाइमिंग)",
+    "serviceParts": "Original Spare Parts / Motors (स्पेयर पार्ट्स / मोटर)",
+    "serviceOther": "Other General Inquiry (अन्य जानकारी)",
+    "submitBtn": "SUBMIT INQUIRY",
+    "successTitle": "Inquiry Sent Successfully!",
+    "successDesc": "Dhanyavaad! We have received your details. Dinesh ji or our team member will call you within 1 hour.",
+    "getDirections": "Get Directions on Google Maps",
+    "mapsTitle": "Our Shop Location on Google Maps",
+    "floatingWaTooltip": "Chat on WhatsApp",
+    "floatingCallTooltip": "Call Us Now",
+    "quickCallText": "Click to Call",
+    "quickWaText": "WhatsApp Chat",
+    "mapsAddressDesc": "Opposite Cinema Hall, Kesarganj, Ajmer. Open in maps for step-by-step driving directions.",
+    "openMapsApp": "Open in Google Maps app",
+    "phoneValidation": "Please enter 10 digit mobile number",
+    "namePlaceholder": "e.g. Ramesh Kumar",
+    "phonePlaceholder": "e.g. 9876543210",
+    "messagePlaceholder": "Tell us about your sewing machine brand, model, or timing issues..."
+  },
+  "gallery": {
+    "title": "Our Visual Gallery",
+    "subtitle": "Explore our Kesarganj, Ajmer showroom, real client machine installations, professional workshop, and expert repair jobs.",
+    "filterLabel": "Categories",
+    "allPhotos": "All Photos",
+    "noPhotos": "No photos found matching your selection.",
+    "mapLocation": "Kesarganj, Ajmer Shop",
+    "lightboxInfo": "Image {current} of {total}",
+    "categories": {
+      "shop": "Our Showroom",
+      "machines": "Sewing Machines",
+      "repairs": "Expert Repairs",
+      "workshop": "Our Workshop",
+      "customers": "Happy Customers",
+      "installation": "Installations"
+    },
+    "visitShowroomBtn": "Visit Kamal Showroom!",
+    "visitShowroomDesc": "Want to see these machines running live? Visit our shop opposite Cinema Hall, Kesarganj, Ajmer to experience stitching demos first-hand."
+  },
+  "home": {
+    "hero": {
+      "tagline": "Trusted in Ajmer Since 1995",
+      "headline": "Ajmer's Trusted Sewing Machine Shop",
+      "subheading": "Sales • Repair • Home Installation",
+      "description": "Get the best quality sewing machines and expert repair services right at your doorstep. Proudly serving tailors, boutiques, and households in Kesarganj & Ajmer with 100% satisfaction.",
+      "callBtn": "Call Now",
+      "whatsappBtn": "WhatsApp Us",
+      "directionsBtn": "Get Directions"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "subtitle": "With over 25 years of trusted experience in Ajmer, we are your one-stop shop for everything related to sewing machines.",
+      "items": [
+        {
+          "title": "25+ Years Experience",
+          "desc": "Serving local boutiques, tailors, and families in Rajasthan since 1995 with unmatched trust and expertise."
+        },
+        {
+          "title": "Fast Repair Services",
+          "desc": "We understand your work can't wait. We offer ultra-fast diagnosis and repair, often on the same day."
+        },
+        {
+          "title": "Original Spare Parts",
+          "desc": "We only use original motors, needles, presser feet, oils, gears, and parts from authorized brand suppliers."
+        },
+        {
+          "title": "Home Service Available",
+          "desc": "No need to carry heavy machines. We provide hassle-free pickup, home repair, and delivery services."
+        },
+        {
+          "title": "Affordable & Fair Prices",
+          "desc": "Highly competitive prices on both new machines and repairs with zero hidden costs or extra charges."
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Specialized Services",
+      "subtitle": "From selecting the perfect new model to keeping your industrial units running, we offer complete support.",
+      "items": [
+        {
+          "title": "Machine Sales",
+          "desc": "Wide collection of domestic, high-speed industrial, and embroidery machines with manufacturer warranty."
+        },
+        {
+          "title": "Expert Machine Repair",
+          "desc": "Solving thread bunching, stitch skipping, motor heating, and timing problems for all brands."
+        },
+        {
+          "title": "Home Installation & Demo",
+          "desc": "Professional setup of your new machine at your home, with a free detailed tutorial and demonstration."
+        },
+        {
+          "title": "Annual Maintenance (AMC)",
+          "desc": "Regular servicing, deep cleaning, and systematic oiling to maximize your sewing machine's life."
+        },
+        {
+          "title": "Industrial Machines",
+          "desc": "Heavy-duty power machines like Jack, Juki, and Brother for garment manufacturing units."
+        },
+        {
+          "title": "Domestic Machines",
+          "desc": "Compact, zigzag, and embroidery sewing machines ideal for home tailoring and passion projects."
+        }
+      ]
+    },
+    "brands": {
+      "title": "Top Brands We Deal In",
+      "subtitle": "We sell and service all leading sewing machine brands in India, providing original parts and expert tune-ups."
+    },
+    "featured": {
+      "title": "Featured Sewing Machines",
+      "subtitle": "Our highest selling and most trusted models currently in stock. Touch, feel, and try them today at our store.",
+      "enquire": "Enquire on WhatsApp",
+      "details": "View Details",
+      "speed": "Speed",
+      "warranty": "Warranty",
+      "functions": "Functions",
+      "items": [
+        {
+          "name": "Usha Janome Allure DLX",
+          "category": "Computerized Domestic",
+          "price": "₹15,499",
+          "speed": "860 SPM",
+          "warranty": "2 Years Brand Warranty",
+          "desc": "Automatic stitching with 13 built-in designs, ideal for modern boutique embroidery and stylish tailoring.",
+          "features": [
+            "One-step buttonhole",
+            "Stitch width control",
+            "LED sewing light"
+          ]
+        },
+        {
+          "name": "Singer Promise 1409",
+          "category": "Compact Zigzag Domestic",
+          "price": "₹10,800",
+          "speed": "750 SPM",
+          "warranty": "2 Years Brand Warranty",
+          "desc": "Compact and extremely easy-to-use sewing machine, perfect for beginners and household alterations.",
+          "features": [
+            "9 decorative stitches",
+            "Heavy duty metal frame",
+            "Easy stitch selection"
+          ]
+        },
+        {
+          "name": "Jack F5 Direct Drive",
+          "category": "High-Speed Industrial",
+          "price": "₹21,500",
+          "speed": "5000 SPM",
+          "warranty": "1 Year Motor Warranty",
+          "desc": "Ultra fast, energy saving power machine. Best choice for professional boutique shops and tailor factories.",
+          "features": [
+            "Direct-drive silent motor",
+            "Adjustable stitch length",
+            "Smart safety switch"
+          ]
+        },
+        {
+          "name": "Merritt Domestic Deluxe",
+          "category": "Traditional Straight Stitch",
+          "price": "₹7,200",
+          "speed": "Hand/Foot Operated",
+          "warranty": "1 Year Shop Warranty",
+          "desc": "The classic, ultra-durable straight-stitch machine that lasts for generations. Low-cost and highly dependable.",
+          "features": [
+            "Cast iron body",
+            "Treadle stand compatible",
+            "Saves electricity"
+          ]
+        }
+      ]
+    },
+    "reviews": {
+      "title": "What Our Customers Say",
+      "subtitle": "We measure our success by the satisfaction of the tailors, designers, and mothers who trust our work.",
+      "items": [
+        {
+          "name": "Ram Charan",
+          "role": "Professional Tailor, Kesarganj",
+          "comment": "Mera Jack industrial machine ka motor festival season ke beech chalna band ho gaya tha. Kamal Sewing Machines ne sirf 3 ghante mein aakar repair kiya! Inki service sach me behad tez aur bharosemand hai.",
+          "rating": 5,
+          "date": "2 weeks ago"
+        },
+        {
+          "name": "Pooja Sharma",
+          "role": "Boutique Owner, Ajmer City",
+          "comment": "I purchased 2 Usha Janome computerized machines from here. The team delivered them home, did the full installation, and explained all features patiently. Very polite and helpful behavior!",
+          "rating": 5,
+          "date": "1 month ago"
+        },
+        {
+          "name": "Amit Verma",
+          "role": "Local Resident, Ajmer",
+          "comment": "Purani machine repair karwani thi jo lagbhag band padi thi. Inhone original parts dale aur servicing ki, ab machine bilkul nayi jaisi smoothly chal rahi hai. Price bhi bohot reasonable tha.",
+          "rating": 5,
+          "date": "3 days ago"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to common queries about sales, home repair services, and warranties in Ajmer.",
+      "items": [
+        {
+          "q": "Do you provide sewing machine repair services at home in Ajmer?",
+          "a": "Yes! We provide doorstep repair and installation services across Kesarganj and general Ajmer localities. For major faults, we also offer pick-up and drop-back services."
+        },
+        {
+          "q": "Which brands of sewing machines do you sell?",
+          "a": "We are authorized dealers and service partners for USHA, SINGER, JACK, BROTHER, and MERRITT. You can get brand-new models with full official warranty cards from us."
+        },
+        {
+          "q": "Are the spare parts used during repairs original?",
+          "a": "Absolutely. We only use 100% genuine and brand-authorized spare parts (motors, needle bars, bobbin cases, gears) to ensure a long life and smooth operation of your machine."
+        },
+        {
+          "q": "Is there any warranty on your repair work?",
+          "a": "Yes, we stand by our craft. We provide a 30-day service warranty on our repairs. If the exact same issue arises again, we will fix it free of charge."
+        },
+        {
+          "q": "Do you offer demo classes for computerized embroidery machines?",
+          "a": "Yes, we provide a complete, hands-on demonstration and tutorial on how to use computerized zigzag/embroidery machines upon purchase or installation, completely free of cost."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us & Store Location",
+      "subtitle": "Visit our shop, give us a phone call, or send a WhatsApp message. We are excited to serve you!",
+      "addressHeader": "Our Address",
+      "address": "Opposite Cinema Hall, Kesarganj, Ajmer, Rajasthan - 305001",
+      "hoursHeader": "Business Hours",
+      "hours": "Monday - Saturday: 10:00 AM - 8:00 PM (Sunday Closed)",
+      "phoneHeader": "Call Support",
+      "whatsappHeader": "WhatsApp Inquiry",
+      "formHeader": "Send Quick Inquiry",
+      "formName": "Your Name",
+      "formPhone": "Your Phone Number",
+      "formSelect": "Select Inquiry Type",
+      "formSelectOpt1": "Want to buy a New Machine",
+      "formSelectOpt2": "Need Machine Repair / Service",
+      "formSelectOpt3": "Want original Spare Parts",
+      "formSelectOpt4": "Other Inquiry",
+      "formMessage": "Tell us about your machine / issue",
+      "formBtn": "Send Message",
+      "formSuccess": "Thank you! Your message has been sent successfully. Our team will contact you on WhatsApp or Call within 2 hours."
+    },
+    "namePlaceholder": "e.g. Ram Charan",
+    "phonePlaceholder": "e.g. 9876543210",
+    "messagePlaceholder": "e.g. I want to repair my Singer Tailor model sewing machine."
+  },
+  "machines": {
+    "title": "Sewing Machines Catalog",
+    "subtitle": "Find the perfect sewing machine for your boutique, tailoring unit, or home projects. All models come with authorized brand warranty.",
+    "searchPlaceholder": "Search by machine name, brand, or features...",
+    "filterCategory": "Categories",
+    "filterBrand": "Brands",
+    "allCategories": "All Categories",
+    "allBrands": "All Brands",
+    "priceText": "Price",
+    "priceOnRequest": "Price on Request",
+    "availability": {
+      "in_stock": "In Stock",
+      "limited": "Limited Stock",
+      "out_of_stock": "Out of Stock"
+    },
+    "btnWhatsapp": "WhatsApp Inquiry",
+    "btnDetails": "View Details",
+    "noProducts": "No machines found matching your criteria. Try adjusting your filters or search term.",
+    "clearFilters": "Clear Filters",
+    "modal": {
+      "keyFeatures": "Key Features",
+      "techSpecs": "Technical Specifications",
+      "specField": "Specification",
+      "specValue": "Detail",
+      "closeBtn": "Close Details",
+      "warrantyBadge": "Authorized Warranty Included",
+      "visitShop": "Want a live demo? Visit our showroom at Kesarganj, Ajmer!"
+    },
+    "categories": {
+      "manual": "Manual Machines",
+      "electric": "Electric Machines",
+      "computerized": "Computerized Machines",
+      "industrial": "Industrial Machines",
+      "overlock": "Overlock Machines",
+      "embroidery": "Embroidery Machines"
+    }
+  },
+  "repairservices": {
+    "title": "Expert Repair Services",
+    "subtitle": "Professional sewing machine repairs, genuine spare parts installation, and quick doorstep maintenance in Ajmer.",
+    "servicesHeading": "Our Specializations",
+    "servicesSub": "Select from our specialized solutions for home tailoring, boutiques, and industrial factories.",
+    "processHeading": "Our Simple Repair Process",
+    "processSub": "How we ensure your sewing machine returns to pristine condition, fast and hassle-free.",
+    "callBtn": "Call Now",
+    "whatsappBtn": "WhatsApp Booking",
+    "visitShopText": "Have a heavy machine? Visit our workshop at Kesarganj, Ajmer or schedule a doorstep Home Visit today!",
+    "guaranteeTitle": "Why Choose Kamal Service?",
+    "guaranteeText": "All repairs are done by veteran mechanics with 20+ years of experience using 100% original brand spare parts.",
+    "timeLabel": "Est. Time",
+    "processSteps": [
+      {
+        "title": "Customer Calls",
+        "desc": "You call or message us about your machine's issue."
+      },
+      {
+        "title": "Inspection",
+        "desc": "Our mechanic diagnoses the fault and shares an estimate."
+      },
+      {
+        "title": "Repair",
+        "desc": "Precision repair using original brand spare parts."
+      },
+      {
+        "title": "Testing",
+        "desc": "Multiple test stitches on cotton & denim fabrics."
+      },
+      {
+        "title": "Delivery",
+        "desc": "Secure pickup from showroom or home delivery."
+      }
+    ]
+  }
+}
