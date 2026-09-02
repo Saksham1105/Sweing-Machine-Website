@@ -1,1 +1,2 @@
-/* /index.html 200
+# SPA routing is handled by the Cloudflare Worker/Workers Static Assets configuration.
+# Do not add a wildcard rewrite here; Wrangler rejects the Pages-style /* /index.html 200 rule.
